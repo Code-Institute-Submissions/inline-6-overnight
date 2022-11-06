@@ -29,6 +29,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# To prevent 500 errors during login and registration
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+
 # Application definition
 
 INSTALLED_APPS = [
