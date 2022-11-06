@@ -1,11 +1,13 @@
 from django.shortcuts import render
+from .models import *
 
 
 def store(request):
     """
     Django function-based view for the store (or home) page
     """
-    context = {}
+    products = Product.objects.all()
+    context = {'products': products}
     return render(request, 'store/store.html', context)
 
 
