@@ -31,9 +31,27 @@
         timing, top, torque, toyota, transmission, tuning, turbo, turbocharged, turbocharger, twin-turbo, unit,
         valve, valvetrain, vehicle, vibration, warranty, website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-        <!-- JavaScript variable to query the user to check his/her status -->
         <script type="text/javascript">
+            // JavaScript variable to query the user to check his/her status
             var user = '{{request.user}}'
+            // JavaScript function to create a customized CSRF token and prevent the updateUserOrder function in //
+            // cart.js to throw an error //
+            function getToken(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getToken('csrftoken');
         </script>
         <title>
             {% block title %}
