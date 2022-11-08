@@ -61,4 +61,11 @@
             </div>
         </div>
     </div>
+<!-- JavaScript code to hide the shipping form for digital products -->
+<script type="text/javascript">
+	var shipping = '{{order.shipping}}'
+	if (shipping == 'False') {
+	 	document.getElementById('shipping-info').innerHTML = ''
+	}
+</script>
 {% endblock content %}
