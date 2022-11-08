@@ -62,12 +62,14 @@
             </div>
         </div>
     </div>
-<!-- JavaScript code to hide the shipping form for digital products -->
+<!-- JavaScript -->
 <script type="text/javascript">
+    // JavaScript code to hide the shipping form for digital products
 	var shipping = '{{order.shipping}}'
 	if (shipping == 'False') {
 	 	document.getElementById('shipping-info').innerHTML = ''
 	}
+    // JavaScript code to hide the button and open the payment option on submit
     var form = document.getElementById('form')
 	form.addEventListener('submit', function(e) {
 	    e.preventDefault()
@@ -75,5 +77,13 @@
 	    document.getElementById('form-button').classList.add('hidden')
 	    document.getElementById('payment-info').classList.remove('hidden')
 	    })
+    // JavaScript code to add an event handler to the new "payment-submit" button
+    // and create a function to trigger on submission
+    document.getElementById('make-payment').addEventListener('click', function(e) {
+	    	submitFormData()
+	    })
+	    function submitFormData() {
+	    	console.log('Payment button clicked')
+	    }
 </script>
 {% endblock content %}
