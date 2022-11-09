@@ -64,8 +64,9 @@
     </div>
 <!-- JavaScript -->
 <script type="text/javascript">
-    // To hide the shipping form for digital products
 	var shipping = '{{order.shipping}}'
+    var total = '{{order.get_cart_total|floatformat:2}}'
+    // To hide the shipping form for digital products
 	if (shipping == 'False') {
 	 	document.getElementById('shipping-info').innerHTML = ''
 	}
@@ -76,10 +77,11 @@
     if (shipping == 'False' && user != 'AnonymousUser') {
         // To hide the entire form if the user is logged in and shipping is False
         document.getElementById('form-wrapper').classList.add("hidden");
-        // To show the payment options if the logged-in user wants to buy an item that doesn't require shipping
+        // To show the payment options if the logged-in user wants to buy an item
+        // that doesn't require shipping
         document.getElementById('payment-info').classList.remove("hidden");
     }
-    // JavaScript code to hide the button and open the payment option on submit
+    // To hide the button and open the payment option on submit
     var form = document.getElementById('form')
 	form.addEventListener('submit', function(e) {
 	    e.preventDefault()
@@ -87,13 +89,40 @@
 	    document.getElementById('form-button').classList.add('hidden')
 	    document.getElementById('payment-info').classList.remove('hidden')
 	    })
-    // JavaScript code to add an event handler to the new "payment-submit" button
+    // To add an event handler to the new "payment-submit" button
     // and create a function to trigger on submission
     document.getElementById('make-payment').addEventListener('click', function(e) {
 	    	submitFormData()
 	    })
-	    function submitFormData() {
-	    	console.log('Payment button clicked')
+	function submitFormData() {
+	    console.log('Payment button clicked')
+
+        var userFormData = {
+            'name': null,
+            'email': null,
+            'total': total,
 	    }
+
+        var shippingInfo = {
+            'address': null,
+            'city': null,
+            'county': null,
+            'postcode': null,
+            'country': null,
+        }
+
+        if (shipping != 'False') {
+            shippingInfo.address = form.address.value
+            shippingInfo.city = form.city.value
+            shippingInfo.county = form.county.value
+            shippingInfo.postcode = form.postcode.value
+            shippingInfo.country = form.country.value
+        }
+
+        if (user == 'AnonymousUser') {
+            userFormData.name = form.name.value
+            userFormData.email = form.email.value
+        }
+	}
 </script>
 {% endblock content %}
