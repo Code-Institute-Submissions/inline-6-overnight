@@ -64,11 +64,21 @@
     </div>
 <!-- JavaScript -->
 <script type="text/javascript">
-    // JavaScript code to hide the shipping form for digital products
+    // To hide the shipping form for digital products
 	var shipping = '{{order.shipping}}'
 	if (shipping == 'False') {
 	 	document.getElementById('shipping-info').innerHTML = ''
 	}
+    // To hide the logged-in user's info
+    if (user != 'AnonymousUser') {
+ 	    document.getElementById('user-info').innerHTML = ''
+    }
+    if (shipping == 'False' && user != 'AnonymousUser') {
+        // To hide the entire form if the user is logged in and shipping is False
+        document.getElementById('form-wrapper').classList.add("hidden");
+        // To show the payment options if the logged-in user wants to buy an item that doesn't require shipping
+        document.getElementById('payment-info').classList.remove("hidden");
+    }
     // JavaScript code to hide the button and open the payment option on submit
     var form = document.getElementById('form')
 	form.addEventListener('submit', function(e) {
