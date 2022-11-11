@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 import json
+import datetime
 from .models import *
 
 
@@ -94,5 +95,5 @@ def processOrder(request):
     """
     Django function-based view to for the POST request to send data to
     """
-    print('Data:', request.body)
+    transaction_id = datetime.datetime.now().timestamp()
     return JsonResponse('Payment complete!', safe=False)
