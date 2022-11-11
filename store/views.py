@@ -88,3 +88,10 @@ def updateItem(request):
     if orderItem.quantity <= 0:
         orderItem.delete()
     return JsonResponse('Item was added', safe=False)
+
+
+def processOrder(request):
+    """
+    Django function-based view to for the POST request to send data to
+    """
+    return JsonResponse('Payment complete!', safe=False)
