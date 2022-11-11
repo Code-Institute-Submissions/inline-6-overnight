@@ -94,4 +94,5 @@ def processOrder(request):
     """
     Django function-based view to for the POST request to send data to
     """
+    print('Data:', request.body)
     return JsonResponse('Payment complete!', safe=False)
