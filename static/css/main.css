@@ -97,3 +97,14 @@ h1,h2,h3,h4,h5,h6 {
 .hidden {
 	display: none!important;
 }
+
+/* Media queries for mobile devices */
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    #title {
+        padding-left: 13px;
+    }
+
+	#store-title {
+        padding-left: 13px;
+    }
+}

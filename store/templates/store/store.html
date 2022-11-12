@@ -1,6 +1,34 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+    <!-- Home image -->
+    <img src="{% static 'images/home-image.png' %}" class="img-fluid" width="1150" alt="Inline-6 engine image">
+    <br/><br/>
+    <!-- Title and introductory text for the main page -->
+    <div class="row justify-content-center" id="title">
+        <h1><strong>INLINE-6 OVERNIGHT</strong> | HOME OF THE STRAIGHT-SIX ENGINE</h1>
+    </div>
+    <br/><br/>
+    <p>Welcome to Inline-6 Overnight. We specialize in the procurement, resale, shipment and delivery of specific, 
+        brand new straight-six combustion engines. With our supplier base stretching worldwide and with a supply 
+        chain that covers all locations of the globe, you can rest assured that we'll find the quality engine you 
+        need at the best available price and deliver it the next business day.
+    </p>
+    <p>We at Inline-6 Overnight bring over 10 years of experience providing engine solutions to professional tuning 
+        shops, automobile repair businesses, garages, workshops, car service specialists and private owners, and 
+        we'll provide a constant first-class service that you can rely on.
+    </p>
+    <p>
+        <strong>
+            Please find a list of our products below, along with a detailed description and specification data.
+        </strong>
+    </p>
+    <br/><br/>
+    <!-- Store -->
+    <div class="row justify-content-center" id="store-title">
+        <h3><strong>Our Engines and ECU Remapping Software</strong></h3>
+    </div>
+    <br/><br/>
     <div class="row">
         {% for product in products %}
         <div class="col-lg-4 col-md-6 col-sm-6">
@@ -8,7 +36,9 @@
             <div class="box-element product">
                 <h6><strong>{{product.name}}</strong></h6>
                 <hr>
-                <button data-product={{product.id}} data-action="add" class="btn btn-dark add-btn update-cart">Add to Cart</button>
+                <button data-product={{product.id}} data-action="add" class="btn btn-dark add-btn update-cart">
+                    Add to Cart
+                </button>
                 <a class="btn btn-outline-secondary" href="#">View</a>
                 <h4 style="display: inline-block; float: right">€{{product.price|floatformat:2}}</h4>
             </div>
