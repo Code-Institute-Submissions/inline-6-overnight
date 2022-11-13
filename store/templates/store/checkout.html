@@ -71,6 +71,11 @@
     // To render the PayPal button into #paypal-button-container
     paypal.Buttons({
 
+        style: {
+          color: 'blue',
+          shape: 'rect',
+       },
+
         // To set up the transaction (to launch the PayPal checkout experience)
         createOrder: function(data, actions) {
             return actions.order.create({
