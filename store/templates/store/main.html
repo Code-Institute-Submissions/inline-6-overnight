@@ -80,26 +80,29 @@
                     </li>
                 </ul>
                 <div class="form-inline my-2 my-lg-0">
-                    <li>
-                        <a href="#" class="btn btn-light">Register</a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-light">Log in</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle btn btn-light" href="#" id="navbarDropdown" role="button" 
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        User
+                    {% if user.is_authenticated %}
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle btn btn-light" href="#" id="navbarDropdown" role="button" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            User
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Admin</a>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                        </li>
+                        <a href="{% url 'cart' %}">
+                        <img  id="cart-icon" src="{% static 'images/cart.png' %}">
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Admin</a>
-                            <a class="dropdown-item" href="#">Log out</a>
-                        </div>
-                    </li>
-                    <a href="{% url 'cart' %}">
-                       <img  id="cart-icon" src="{% static 'images/cart.png' %}">
-                   </a>
-                   <p id="cart-total">{{cartItems}}</p>
+                        <p id="cart-total">{{cartItems}}</p>
+                    {% else %}
+                        <li>
+                            <a href="#" class="btn btn-light">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-light">Log in</a>
+                        </li>
+                    {% endif %}
                </div>
             </div>
         </nav>
