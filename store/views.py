@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 import json
 import datetime
 from .models import *
+from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.forms import UserCreationForm
 
 
 def store(request):
@@ -119,3 +121,31 @@ def processOrder(request):
     else:
         print('User is not logged in')
     return JsonResponse('Payment complete!', safe=False)
+
+
+def signup(request):
+    """
+    Django function-based view to for the signup page
+    """
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            customer = Customer(user=user)
+            customer.save()
+            return redirect('store')
+    else:
+        form = UserCreationForm()
+    return render(request, 'store/signup.html', {'form': form})
+
+
+def logout_view(request):
+    """
+    Django function-based view for logging out
+    """
+    logout(request)
+    return redirect('store')

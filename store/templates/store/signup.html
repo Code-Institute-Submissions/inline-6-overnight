@@ -1,0 +1,10 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+    <h2>Sign Up to Start Shopping with Inline-6 Overnight</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign up</button>
+    </form>
+{% endblock content %}

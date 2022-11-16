@@ -88,7 +88,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Admin</a>
-                                <a class="dropdown-item" href="#">Log out</a>
+                                <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
                             </div>
                         </li>
                         <a href="{% url 'cart' %}">
@@ -97,7 +97,7 @@
                         <p id="cart-total">{{cartItems}}</p>
                     {% else %}
                         <li>
-                            <a href="#" class="btn btn-light">Register</a>
+                            <a href="{% url 'signup' %}" class="btn btn-light">Sign up</a>
                         </li>
                         <li>
                             <a href="#" class="btn btn-light">Log in</a>
