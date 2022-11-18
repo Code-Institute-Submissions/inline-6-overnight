@@ -5,6 +5,7 @@ import datetime
 from .models import *
 from django.contrib.auth import login, authenticate, logout
 from .forms import UserCreationForm
+from django.http import HttpResponseRedirect
 
 
 def store(request):
@@ -147,9 +148,9 @@ def signup(request):
             form.save()
             return HttpResponseRedirect('/')
     args = {}
-    args.update(csrf(request))
+    # args.update(csrf(request))
     args['form'] = UserCreationForm()
-    return render_to_response('signup', args)
+    return render(request, 'store/signup.html', args)
 
 
 def logout_view(request):
