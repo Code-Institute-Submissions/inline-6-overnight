@@ -4,7 +4,7 @@ import json
 import datetime
 from .models import *
 from django.contrib.auth import login, authenticate, logout
-from django.contrib.auth.forms import UserCreationForm
+from .forms import UserCreationForm
 
 
 def store(request):
@@ -127,20 +127,29 @@ def signup(request):
     """
     Django function-based view to for the signup page
     """
+    # if request.method == 'POST':
+    #     form = UserCreationForm(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #         username = form.cleaned_data.get('username')
+    #         raw_password = form.cleaned_data.get('password1')
+    #         user = authenticate(username=username, password=raw_password)
+    #         login(request, user)
+    #         customer = Customer(user=user)
+    #         customer.save()
+    #         return redirect('store')
+    # else:
+    #     form = UserCreationForm()
+    # return render(request, 'store/signup.html', {'form': form})
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            customer = Customer(user=user)
-            customer.save()
-            return redirect('store')
-    else:
-        form = UserCreationForm()
-    return render(request, 'store/signup.html', {'form': form})
+            return HttpResponseRedirect('/')
+    args = {}
+    args.update(csrf(request))
+    args['form'] = UserCreationForm()
+    return render_to_response('signup', args)
 
 
 def logout_view(request):
