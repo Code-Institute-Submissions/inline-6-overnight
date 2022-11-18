@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class Customer(models.Model):
@@ -14,6 +16,13 @@ class Customer(models.Model):
     def __str__(self):
         return self.user.username
 
+@receiver(post_save, sender=User)
+def create_or_update_user_customer(sender, instance, created, **kwargs):
+    """ Create or update the user Customer object """
+    if created:
+        Customer.objects.create(user=instance)
+    instance.customer.save()
+
 
 class Product(models.Model):
     """
@@ -23,6 +32,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=7, decimal_places=2)
     digital = models.BooleanField(default=False, null=True, blank=False)
     image = models.ImageField(null=True, blank=True)
+    description = models.TextField()
 
     def __str__(self):
         return self.name
