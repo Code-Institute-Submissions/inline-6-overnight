@@ -112,6 +112,14 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
+/* Media queries for the products in mobile devices and tablets */
+@media screen and (min-width: 380px) and (max-width: 574px) {
+	.product-size {
+		margin-right: 60px;
+		margin-left: 60px;
+	}
+}
+
 /* Media queries for mobile devices */
 @media screen and (min-width: 320px) and (max-width: 576px) {
     #title {
