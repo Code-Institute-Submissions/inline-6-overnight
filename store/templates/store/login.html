@@ -1,0 +1,12 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+    <br/>
+    <h2>Log In to Start Shopping with Inline-6 Overnight</h2>
+    <br/><br/><br/>
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-dark">Log in</button>
+    </form>
+{% endblock content %}

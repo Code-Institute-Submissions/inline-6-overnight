@@ -6,6 +6,8 @@ from .models import *
 from django.contrib.auth import login, authenticate, logout
 from .forms import UserCreationForm
 from django.http import HttpResponseRedirect
+from django.contrib import messages
+from django.contrib.auth.forms import AuthenticationForm
 
 
 def store(request):
@@ -151,6 +153,28 @@ def signup(request):
     # args.update(csrf(request))
     args['form'] = UserCreationForm()
     return render(request, 'store/signup.html', args)
+
+
+def login_view(request):
+    """
+    Django function-based view to for the login page
+    """
+    if request.method == "POST":
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                messages.info(request, f"You are now logged in as {username}")
+                return redirect('store')
+            else:
+                messages.error(request, "Invalid username or password")
+        else:
+            messages.error(request, "Invalid username or password.")
+    form = AuthenticationForm()
+    return render(request=request, template_name="store/login.html", context={"login_form": form})
 
 
 def logout_view(request):

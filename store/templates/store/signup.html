@@ -4,9 +4,14 @@
     <br/>
     <h2>Sign Up to Start Shopping with Inline-6 Overnight</h2>
     <br/><br/><br/>
+    <!-- Back button -->
+    <a href="{% url 'store' %}" class="btn btn-dark">Back</a>
+    <br/><br/><br/>
     <form action="{% url 'signup' %}" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Sign up</button>
+        <button type="submit" class="btn btn-dark">Sign up</button>
     </form>
+    <br/>
+    <p class="text-center">Already have an account? <a href="{% url 'login' %}">Sign in here!</a></p>
 {% endblock content %}
