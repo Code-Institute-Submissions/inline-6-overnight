@@ -98,7 +98,7 @@ def updateItem(request):
 
 def processOrder(request):
     """
-    Django function-based view to for the POST request to send data to
+    Django function-based view for the POST request to send data to
     """
     transaction_id = datetime.datetime.now().timestamp()
     data = json.loads(request.body)
@@ -128,36 +128,21 @@ def processOrder(request):
 
 def signup(request):
     """
-    Django function-based view to for the signup page
+    Django function-based view for the signup page
     """
-    # if request.method == 'POST':
-    #     form = UserCreationForm(request.POST)
-    #     if form.is_valid():
-    #         form.save()
-    #         username = form.cleaned_data.get('username')
-    #         raw_password = form.cleaned_data.get('password1')
-    #         user = authenticate(username=username, password=raw_password)
-    #         login(request, user)
-    #         customer = Customer(user=user)
-    #         customer.save()
-    #         return redirect('store')
-    # else:
-    #     form = UserCreationForm()
-    # return render(request, 'store/signup.html', {'form': form})
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/')
     args = {}
-    # args.update(csrf(request))
     args['form'] = UserCreationForm()
     return render(request, 'store/signup.html', args)
 
 
 def login_view(request):
     """
-    Django function-based view to for the login page
+    Django function-based view for the login page
     """
     if request.method == "POST":
         form = AuthenticationForm(request, data=request.POST)
