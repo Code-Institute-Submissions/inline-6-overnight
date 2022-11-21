@@ -168,3 +168,11 @@ def logout_view(request):
     """
     logout(request)
     return redirect('store')
+
+
+def product_detail(request, id):
+    """
+    Django function-based view for the product detail page
+    """
+    product = Product.objects.get(id=id)
+    return render(request, 'store/product_detail.html', {'data': product})

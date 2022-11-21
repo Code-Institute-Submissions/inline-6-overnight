@@ -41,7 +41,7 @@
                         Add to Cart
                     </button>
                 {% endif %}
-                <a class="btn btn-outline-secondary" href="#">View</a>
+                <a class="btn btn-outline-secondary" href="{% url 'product_detail' product.id %}">View</a>
                 <h4 class="price" style="display: inline-block; float: right">€{{product.price|floatformat:2}}</h4>
             </div>
         </div>
