@@ -174,5 +174,18 @@ def product_detail(request, id):
     """
     Django function-based view for the product detail page
     """
+    if request.user.is_authenticated:
+        customer = request.user.customer
+        order, created = Order.objects.get_or_create(
+            customer=customer, complete=False)
+        items = order.orderitem_set.all()
+        cartItems = order.get_cart_items
+    else:
+        # Create empty cart for now for non-logged in users
+        items = []
+        order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
+        cartItems = order['get_cart_items']
+
     product = Product.objects.get(id=id)
-    return render(request, 'store/product_detail.html', {'data': product})
+    context = {'items': items, 'order': order, 'cartItems': cartItems, 'data': product}
+    return render(request, 'store/product_detail.html', context)
