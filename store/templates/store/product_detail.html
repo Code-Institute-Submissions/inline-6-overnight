@@ -2,18 +2,20 @@
 {% load static %}
 {% block content %}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="text-center mt-3">
+        <img src="{{ data.imageURL }}" class="img-fluid w-75" alt="Inline-6 engine image">
+    </div>
+    <br/><br/><br/>
+    <div class="row justify-content-center" id="title">
+        <h1><strong>{{ data.name }}</strong></h1>
+    </div>
+    <br/><br/>
+    <h4 class="price row justify-content-center">€{{ data.price|floatformat:2 }}</h4>
+    <br/><br/>
+    <p>{{ data.description }}</p>
+    <br/><br/><br/>
+    <!-- Back button -->
+    <a href="{% url 'store' %}" class="btn btn-dark">Back</a>
+    <br/><br/><br/>
 
 {% endblock content %}
