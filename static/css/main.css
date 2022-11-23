@@ -98,6 +98,12 @@ h1,h2,h3,h4,h5,h6 {
 	display: none!important;
 }
 
+.sticky-message {
+	position: sticky !important;
+  	top: 60px;
+	z-index: 10000;
+}
+
 /* Media queries for laptops */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 	.price {
