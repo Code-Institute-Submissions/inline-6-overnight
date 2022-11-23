@@ -172,6 +172,7 @@ def logout_view(request):
     Django function-based view for logging out
     """
     logout(request)
+    messages.info(request, f"You are now logged out")
     return redirect('store')
 
 
