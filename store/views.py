@@ -80,6 +80,7 @@ def updateItem(request):
     action = data['action']
     print('action:', action)
     print('productId:', productId)
+    update_message = 'Shopping bag updated'
     customer = request.user.customer
     product = Product.objects.get(id=productId)
     order, created = Order.objects.get_or_create(
@@ -93,6 +94,8 @@ def updateItem(request):
     orderItem.save()
     if orderItem.quantity <= 0:
         orderItem.delete()
+        update_message = 'Product deleted from your bag'
+    messages.info(request, update_message)
     return JsonResponse('Item was added', safe=False)
 
 
@@ -123,6 +126,7 @@ def processOrder(request):
                 )
     else:
         print('User is not logged in')
+    messages.info(request, 'Transaction completed! Your order will be delivered the next working day. Thank you for shopping with Inline-6 Overnight.')
     return JsonResponse('Payment complete!', safe=False)
 
 
@@ -134,6 +138,7 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.info(request, f"You are now signed up, please login")
             return HttpResponseRedirect('/')
     args = {}
     args['form'] = UserCreationForm()
