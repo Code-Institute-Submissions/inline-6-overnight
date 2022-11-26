@@ -180,5 +180,7 @@
         crossorigin="anonymous"></script>
         <!-- Link to the JS folder in Static files -->
         <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
+        {% block postloadjs %}
+        {% endblock %}
     </body>
 </html>
