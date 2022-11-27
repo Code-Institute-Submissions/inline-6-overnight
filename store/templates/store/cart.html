@@ -14,7 +14,7 @@
                             <th><h5 class="cart-size">Total: <strong>€{{order.get_cart_total|floatformat:2}}</strong></h5></th>
                             {% if items %}
                                 <th>
-                                    <a style="float: right; margin: 5px;" class="btn btn-success cart-size" href="{% url 'checkout' %}">
+                                    <a style="float: right; margin: 5px;" class="btn btn-dark cart-size" href="{% url 'checkout' %}">
                                         Checkout
                                     </a>
                                 </th>
