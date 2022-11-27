@@ -92,18 +92,25 @@ o create the website's README.md file so that all details of its creation are do
 
 #### o Color Scheme
 
-Black (#000000) and white (#FFFFFF) together is the best color scheme for e-Commerce. It's practical, professional and versatile, and it's the perfect contrast for great readability and accessibility. Grey was also used throughout the website, tweaked to make sure that, in bright light, the lighter shades of grey don't disappear (grey is only used on the h1/h2/h3/h4/h5/h6 tags for headings, so it's not used for small text). HSL, RGBA and Hex colors are used to tweak a few of the white (like "hsl(0, 0%, 98%)", "hsl(0, 0%, 80%)", "rgba(214,214,214,1)" and "#ececec") and grey (like "hsl(0, 0%, 30%)" for Hex color hex #666666) colors, as they're the websafe versions of such colors. The cart total on the cart image on the navbar is red (#FF0000), making it very readable/visible on the navbar's black background (only the circular shape for the cart total is red, so it's not used for red or small text). And Bootstrap's dark button color (#292B2C) is used for the all buttons on the website's body, making it very visible/readable. The color used for the body text was #212529 (a very dark shade of cyan-blue, which looks great on a white background). The main photo at the top of the store/main page obeys the chosen color scheme, and the product images unavoidably provide a different mix of colors.
+Black (#000000) and white (#FFFFFF) together is the best color scheme for e-Commerce. It's practical, professional and versatile, and it's the perfect contrast for great readability and accessibility. Grey was also used throughout the website, tweaked to make sure that, in bright light, the lighter shades of grey don't disappear (grey is only used on the h1/h2/h3/h4/h5/h6 tags for headings and the buttons on the body, so it's not used for small text). HSL, RGBA and Hex colors are used to tweak a few of the white (like "hsl(0, 0%, 98%)", "hsl(0, 0%, 80%)", "rgba(214,214,214,1)" and "#ececec") and grey (like "hsl(0, 0%, 30%)" for Hex color hex #666666) colors, as they're the websafe versions of such colors. The cart total on the cart image on the navbar is red (#FF0000), making it very readable/visible on the navbar's black background (only the circular shape for the cart total is red, so it's not used for red or small text). And Bootstrap's dark button color (#292B2C) is used for the all buttons on the website's body, making it very visible/readable. The color used for the body text was #212529 (a very dark shade of cyan-blue, which looks great on a white background). The main photo at the top of the store/main page obeys the chosen color scheme, and the product images unavoidably provide a different mix of colors.
 
-Please see the results for the body's text color contrast check [here]().
-Please see the results for the navbar's and the footer's color contrast check [here]() and [here]().
-Please see the results for the cart total's color contrast check [here]().
-Please see the results for the body's buttons' color contrast check [here]().
+Please see the results for the body's text color contrast check [here](docs/color-contrast-check-body-text.png).
+
+Please see the results for the navbar's and the footer's color contrast check [here](docs/color-contrast-check-navbar-and-footer-text.png).
+
+Please see the results for the cart total's color contrast check [here](docs/color-contrast-check-cart-total-container.png).
+
+Please see the results for the headings "h" tags' color contrast check [here](docs/color-contrast-check-h-tags-for-headings.png).
+
+Please see the results for the body's buttons' color contrast check [here](docs/color-contrast-check-body-buttons.png).
 
 #### o Typography
 
-The Roboto font makes it perfect for short pieces in all caps, and it's also effective in lowercase as paragraphing text. This is the best choice when e-Commerce products are described in long paragraphs or provided with technical specifications, as it’s the case with Inline-6 Overnight. It suits the layout and the style of this website and provides clear reading and accessibility for the user, so it was used as part of a [system font stack already available on the user's machine](), which is believed to be a useful and elegant solution that eliminates the need to fetch a font elsewhere and makes load times faster (fonts are usually one of the heaviest resources loaded on any app). It matches what the current Operating System uses, so it lends a comfortable look to this project. It was imported along with the Bootstrap code used throughout the website.
+The Roboto font makes it perfect for short pieces in all caps, and it's also effective in lowercase as paragraphing text. This is the best choice when e-Commerce products are described in long paragraphs or provided with technical specifications, as it’s the case with Inline-6 Overnight. It suits the layout and the style of this website and provides clear reading and accessibility for the user, so it was used as part of a [system font stack already available on the user's machine](docs/system-font-stack.png), which is believed to be a useful and elegant solution that eliminates the need to fetch a font elsewhere and makes load times faster (fonts are usually one of the heaviest resources loaded on any app). It matches what the current Operating System uses, so it lends a comfortable look to this project. It was imported along with the Bootstrap code used throughout the website.
 
 #### o Imagery
+
+Very much on purpose, there are not many images on this e-Commerce website. The main image used - [the one on the Store/main page](static/images/home-image.png) does much of the work helping the user identifying what this project is about and providing color/style to the first page the user sees when he/she lands on this e-Commerce website (it's an inline-6 engine, and there's a Nissan Skyline R34 GT-R in the background). The other images are of the engines/products sold on Inline-6 Overnight (AWS is the image-hosting service used to store the images for this project). And, of course, there's [the favicon image](static/images/favicon-engine.png) used for this website (very appropriately, an engine).
 
 ### • Wireframes
 
@@ -191,7 +198,7 @@ The data model for this project was built using Excel. A screenshot of the sprea
 
 ### • Agile Project Planning
 
-This project was planned and carried out using an Agile approach. 48 User Stories were created based on the idea of building this e-Commerce website by the creator of this project, and the planning of each step in the Agile plan of action used was done based on Dennis Ivy's video tutorial on how to create an e-Commerce website with Django on YouTube (it can be found [here](https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)) - it greatly helped organizing the thinking and prioritization of the User Stories and tasks that led to the final product that is Inline-6 Overnight.
+This project was planned and carried out using an Agile approach. 48 User Stories were created based on the idea of building this e-Commerce website by the creator of this project, and the planning of each step in the Agile plan of action used was done based on Dennis Ivy's video tutorial on how to create an e-Commerce website with Django on YouTube (it can be found [here](https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)) - it greatly helped organizing the thinking and prioritization of the User Stories and tasks that led to the final product that is Inline-6 Overnight. Of course there were a lot more functionalities added to the project, with their own user stories, but Dennis Ivy's video tutorial was a huge help.
 
 Each User Story was created on GitHub using a User Story template created for this purpose (each step of this Agile plan was created on GitHub, for that matter). The User Stories were then transferred to a Product Backlog, created using the "Milestones" tab, and refined/re-prioritized as needed.
 
@@ -377,7 +384,7 @@ Countless bugs were found and fixed during the creation of this blog - the list 
 
 ## Deployment
 
-GitHub is not built to handle backend languages like Python or frameworks like Django, so Heroku was used to deploy this project (all code was pushed to GitHub as normal, but the blog was deployed using Heroku). DEBUG was set to False and the database and Cloudinary secret keys were hidden in the env.py file. The project was deployed using the following steps...
+GitHub is not built to handle backend languages like Python or frameworks like Django, so Heroku was used to deploy this project (all code was pushed to GitHub as normal, but the website was deployed using Heroku). DEBUG was set to False and the database, Stripe and AWS secret keys were hidden in the env.py file. The project was deployed using the following steps...
 
 1.	Log in to Heroku.
 2.	Click on New in the top-right corner and select Create New App. A unique app name must be entered. Then, select the region and click on Create App.
@@ -409,17 +416,17 @@ By forking the GitHub repository, we make a copy of the original repository on o
 
 ### Making a Local Clone
 
-1.	Log in to GitHub and locate the [GitHub repository](https://github.com/PedroMiguelFerreira/i-love-this-game).
+1.	Log in to GitHub and locate the [GitHub repository](https://github.com/PedroMiguelFerreira/inline-6-overnight).
 2.	Under the repository name, click "Clone or download".
 3.	To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4.	Open Git Bash.
 5.	Change the current working directory to the location where you want the cloned directory to be made.
 6.	Type git clone, and then paste the URL you copied in Step 3.
 
-$ git clone https://github.com/PedroMiguelFerreira/i-love-this-game
+$ git clone https://github.com/PedroMiguelFerreira/inline-6-overnight
 7.	Press Enter. Your local clone will be created.
 
-$ git clone https://github.com/PedroMiguelFerreira/i-love-this-game
+$ git clone https://github.com/PedroMiguelFerreira/inline-6-overnight
 
 > Cloning into `CI-Clone`...
 
