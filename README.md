@@ -114,45 +114,37 @@ Very much on purpose, there are not many images on this e-Commerce website. The 
 
 ### • Wireframes
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Store/Home 1 - user logged out) - [View](docs/wireframes/store-home-1-user-logged-out-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Store/Home 1 - user logged in) - [View](docs/wireframes/store-home-1-user-logged-in-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Store/Home 2 - user logged out) - [View](docs/wireframes/store-home-2-user-logged-out-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Store/Home 2 - user logged in) - [View](docs/wireframes/store-home-2-user-logged-in-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Store/Home 3 - user logged out) - [View](docs/wireframes/store-home-3-user-logged-out-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Store/Home 3 - user logged in) - [View](docs/wireframes/store-home-3-user-logged-in-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Footer - user logged out) - [View](docs/wireframes/footer-user-logged-out-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Footer - user logged in) - [View](docs/wireframes/footer-user-logged-in-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Sign up) - [View](docs/wireframes/sign-up-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Log in) - [View](docs/wireframes/log-in-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Product detail - user logged out) - [View](docs/wireframes/product-detail-user-logged-out-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Product detail - user logged in) - [View](docs/wireframes/product-detail-user-logged-in-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Cart) - [View](docs/wireframes/cart-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Check out - before payment) - [View](docs/wireframes/check-out-before-payment-desktop.png)
 
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Check out - payment) - [View](docs/wireframes/check-out-payment-desktop.png)
 
-o Desktop wireframe () - [View]()
-
-o Desktop wireframe () - [View]()
-
-o Desktop wireframe () - [View]()
-
-o Desktop wireframe () - [View]()
-
-o Desktop wireframe () - [View]()
+o Desktop wireframe (Check out - payment - only digital products on cart) - [View](docs/wireframes/check-out-payment-only-digital-products-on-cart-desktop.png)
 
 o Mobile wireframe () - [View]()
 
