@@ -180,9 +180,13 @@ o Mobile wireframe (Check out - payment - only digital products on cart) - [View
 
 ### • Data Model
 
-The data model for this project was built using Excel. A screenshot of the spreadsheet was then converted into an image file and has been made available on this README.md file. It makes extensive use of Django's built-in User model.
+The data model for this project was built using Excel. A screenshot of the spreadsheet was then converted into an image file and has been made available on this README.md file. Five models were created for this project, and Django's built-in User model was also used.
 
-![Model Diagram]()
+Being an e-Commerce website, the Product model (with all the necessary fields for each of the website's products) and the Order model (with all the necessary fields for all customer orders, linked to the Customer model through a ForeignKey) were obvious choices, but there are also the Customer model (with all the necessary fields to cover the customer's details, linked to the User model through a OneToOneField, as one specific user of the website can only be converted into one specific customer), the OrderItem model (with all the necessary fields to define the details of a product line on the user's cart when shopping on Inline-6 Overnight, linked to the Product and User models through ForeignKeys) and the ShippingAddress model (to define the necessary fields required from the customer to deliver his/her order, which provides access to the final checkout step that is the Stripe payment option - this model also defines the option of a digital/non-physical product, which doesn't need to be physically shipped, just sent to the customer by email). All models and all of their functionality are kept in a single app called "store" - it's a simple e-Commerce website, and one app has been considered to be sufficient to understand the site's code and its functionality. These five models were created based on Dennis Ivy's video tutorial on how to create an e-Commerce website using Django on YouTube (it can be found [here](https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)) and tweaked in order to meet the needs of this project and the ideas of its creator.
+
+Object-Oriented Programming and function-based views were widely used throughout this project.
+
+![Model Diagram](docs/model-diagram.png)
 
 ### • Agile Project Planning
 
