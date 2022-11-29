@@ -146,37 +146,37 @@ o Desktop wireframe (Check out - payment) - [View](docs/wireframes/check-out-pay
 
 o Desktop wireframe (Check out - payment - only digital products on cart) - [View](docs/wireframes/check-out-payment-only-digital-products-on-cart-desktop.png)
 
-o Mobile wireframe (Store/Home 1 - user logged out) - [View]()
+o Mobile wireframe (Store/Home 1 - user logged out) - [View](docs/wireframes/store-home-1-user-logged-out-mobile.png)
 
-o Mobile wireframe (Store/Home 1 - user logged in) - [View]()
+o Mobile wireframe (Store/Home 1 - user logged in) - [View](docs/wireframes/store-home-1-user-logged-in-mobile.png)
 
-o Mobile wireframe (Store/Home 2 - user logged out) - [View]()
+o Mobile wireframe (Store/Home 2 - user logged out) - [View](docs/wireframes/store-home-2-user-logged-out-mobile.png)
 
-o Mobile wireframe (Store/Home 2 - user logged in) - [View]()
+o Mobile wireframe (Store/Home 2 - user logged in) - [View](docs/wireframes/store-home-2-user-logged-in-mobile.png)
 
-o Mobile wireframe (Store/Home 3 - user logged out) - [View]()
+o Mobile wireframe (Store/Home 3 - user logged out) - [View](docs/wireframes/store-home-3-user-logged-out-mobile.png)
 
-o Mobile wireframe (Store/Home 3 - user logged in) - [View]()
+o Mobile wireframe (Store/Home 3 - user logged in) - [View](docs/wireframes/store-home-3-user-logged-in-mobile.png)
 
-o Mobile wireframe (Footer - user logged out) - [View]()
+o Mobile wireframe (Footer - user logged out) - [View](docs/wireframes/footer-user-logged-out-mobile.png)
 
-o Mobile wireframe (Footer - user logged in) - [View]()
+o Mobile wireframe (Footer - user logged in) - [View](docs/wireframes/footer-user-logged-in-mobile.png)
 
-o Mobile wireframe (Sign up) - [View]()
+o Mobile wireframe (Sign up) - [View](docs/wireframes/sign-up-mobile.png)
 
-o Mobile wireframe (Log in) - [View]()
+o Mobile wireframe (Log in) - [View](docs/wireframes/log-in-mobile.png)
 
-o Mobile wireframe (Product detail - user logged out) - [View]()
+o Mobile wireframe (Product detail - user logged out) - [View](docs/wireframes/product-detail-user-logged-out-mobile.png)
 
-o Mobile wireframe (Product detail - user logged in) - [View]()
+o Mobile wireframe (Product detail - user logged in) - [View](docs/wireframes/product-detail-user-logged-in-mobile.png)
 
-o Mobile wireframe (Cart) - [View]()
+o Mobile wireframe (Cart) - [View](docs/wireframes/cart-mobile.png)
 
-o Mobile wireframe (Check out - before payment) - [View]()
+o Mobile wireframe (Check out - before payment) - [View](docs/wireframes/check-out-before-payment-mobile.png)
 
-o Mobile wireframe (Check out - payment) - [View]()
+o Mobile wireframe (Check out - payment) - [View](docs/wireframes/check-out-payment-mobile.png)
 
-o Mobile wireframe (Check out - payment - only digital products on cart) - [View]()
+o Mobile wireframe (Check out - payment - only digital products on cart) - [View](docs/wireframes/check-out-payment-only-digital-products-on-cart-mobile.png)
 
 ### • Data Model
 
