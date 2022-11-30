@@ -218,19 +218,25 @@ o
 
 ## Features Left to Implement
 
-• 
+• Guest checkout functionality, so that users can shop around the website without the need to create an account (something that may not be totally suitable for a website that sells such expensive products - mostly car engines, and mostly to businesses in the automotive industry, meaning that there should be some sort of registration details that can be used to identify/track the users/customers of such e-Commerce platform and their orders). But, as forcing users to create an account can affect sales - as any resistance does - it may be an option for future iterations (though the creator of this blog is not a big fan of this feature on websites like Inline-6 Overnight).
 
-• 
+• Product search functionality, so that users can search for specific products without looking through the entire product list (this would make sense on an e-Commerce platform with tens/hundreds/thousands of products, but Inline-6 Overnight focuses on selling the best inline-6 engines, and there's only a handful of products, making product search functionality useless on a website like this - maybe in a future iteration, when more engines/products are added to the website).
 
-• 
+• Product management functionality on the frontend, so that the administrator of Inline-6 Overnight can add/edit/delete products from the frontend without having to access the admin area - a link on the navbar, visible to superusers only, was created to provide access to the admin area to help minimize the absence of such functionality. Maybe in a future iteration.
 
-• 
+• User profile functionality, so users can see their delivery information and view a record of their order history - this one will be part of a future iteration for sure.
 
-• 
+• Categories functionality, so users can go straight to viewing only the specific type of products they're looking for - again, there are only six products in Inline-6 Overnight, so this functionality was not needed at this point in time but, as more products are added to the site, it may be part of a future iteration.
 
-• 
+• Update password functionality, so users can change their password - this one will also be in a future iteration for sure.
 
-• 
+• Product reviews functionality, so users can leave a review for a specific product and share their experience with all the website's users - a typical feature on e-Commerce platforms, and it might have been useful on a website like Inline-6 Overnight. It'll almost certainly be part of a future iteration.
+
+• Email order confirmation functionality - the main idea behind Inline-6 Overnight is simplicity, and some features were left out of this first iteration because of that, but this kind of functionality is common when it comes to e-Commerce platforms. Certainly a must in the next iteration.
+
+• Wishlist functionality, so users can create personalized collections of products they wish to buy and save them in their user account - it doesn't really apply to websites that sell car engines. It might be implemented on a future iteration, but it won't be a priority.
+
+• A simple form for the users to contact the website's administrator, so they can send a private message that will be seen on the admin area - the creator of this website believes that the kind of business that Inline-6 Overnight is (where quick order-to-delivery turnaround times are essential to prevent supply chain issues) benefits more from providing a phone number for its Customer Service Department as the primary method of contact than an online method of communication. So, again, and also in the name of simplicity, this feature was not implemented in this iteration, but it might be in the future.
 
 ## Technologies Used
 
