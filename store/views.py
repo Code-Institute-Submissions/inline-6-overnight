@@ -66,7 +66,7 @@ def checkout(request):
         order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
         cartItems = order['get_cart_items']
 
-    context = {'items': items, 'order': order, 'cartItems': cartItems, 'stripe_public_key': 'pk_test_51LosuqEJvgjDC8ytqp2jUB4lUQMCKweQ5B7sM7ZA3UatT0GAkvr0h1mzEO3noWxJT8vrbzFoNT166td96sx2r3WH00UU0i6EZq', 'client_secret': 'test client secret', }
+    context = {'items': items, 'order': order, 'cartItems': cartItems}
     return render(request, 'store/checkout.html', context)
 
 
