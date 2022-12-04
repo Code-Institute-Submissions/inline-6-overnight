@@ -6,6 +6,52 @@ This is the e-Commerce website of Inline-6 Overnight, a company that specializes
 
 ![Am I Responsive]()
 
+## Marketing Strategy
+
+### E-Commerce Application Type
+
+#### Who are the customers?
+
+Engine replacement/tuning is mostly done by professional tuning shops, automobile repair shops, garages, workshops and car service specialists. They usually order parts whenever the service required by their customers needs them – including engines. Nowadays, these businesses will order any parts from their suppliers almost exclusively online. As businesses, and because engines are a very technical and expensive product, they will need a lot of detailed information before they make a purchase (to compare with what other online engine suppliers offer, for example), so this e-Commerce website will be mostly B2B-oriented. A few car enthusiasts who own their own residential garage are brave enough to order parts online directly and install them by themselves – even engines (when it comes to engines, given their size, weight and complexity, this is less common, but it happens) but, because this kind of product is so technically complex and expensive, these potential customers, who have to know about auto mechanics, will never be impulsive buyers and will look for as much detailed information as possible and, just like auto businesses, they’ll look around for the best deal for as long as it takes, so, again, this website will have to be mostly B2B-oriented. The goal is to convert any first-time-ordering customers into returning customers, and this specific business type definitely offers that possibility.
+
+#### What will they buy?
+
+Inline-six engines (internal combustion engine with six cylinders mounted in a straight line), specifically the three best inline-six engines in the world: Toyota’s 2JZ-GTE, Nissan’s RB26DETT and BMW’s S54. This is a physical product, so a lot of detail needs to be shown to the website user – name, description, price, shipping/delivery costs, postal address to ship the engines to, images of the engines, etc.: these fields will be included in the database models that’ll be used on this website (no need to include, for example, product ratings/reviews, as these engines are some of the best in the world and are made by some of the best car brands in the world – the car community/businesses know how good they are – and the same applies to search and filter results – only three engines will be sold). There’s also another separate product that will be sold – a digital product: car tuning software, so there’s instant access to this product when payment is complete, and the storage of this product will be handled on the database as well. Order notifications will be sent after any purchase.
+
+#### How will they pay?
+
+Engines are very expensive, so they’re not the kind of part auto businesses usually have in stock. They’ll only order an engine when one of their customers needs one. Because the service of replacing an engine is also quite expensive, engine replacements are not as common as other auto repair services for smaller/less expensive parts, so auto businesses will not be subscription customers of any engine supplier like Inline-6 Overnight. Instead, they’ll pay as they go (buy directly on the website via a single payment every time they decide to order an engine).
+
+### Web Marketing
+
+#### Who are the users?
+
+Professional tuning shops, automobile repair shops, garages, workshops and car service specialists (very few individual users).
+
+#### Which online platforms would Inline-6 Overnight find lots of its users? Would its users use social media? If so, which platforms would Inline-6 Overnight find them on?
+
+Most car people in the world can usually be found online on blogs dedicated to cars (it’s very common in the car enthusiasts’ community worldwide). People who own a tuning shop or an automobile repair shop that still works with internal combustion engines, for example, will probably be in the 30-55 age group. According to Khoros, 77% of people aged 30-49 use Facebook, and 51% of people aged 50-65 use Facebook (more than Instagram, Twitter, etc.), making Facebook the perfect social media platform to find users for a website that sells internal combustion engines. YouTube has a large audience in this age group, too, but the cost of creating professional video content makes it prohibitive for many businesses, including Inline-6 Overnight, and it wouldn’t suit a company that is basically an engine reseller (not a lot of useful/relevant video content can be created, the company doesn’t even provide any auto repair or tuning services that could be filmed and turned into good brand content). These users will, however, order parts online, including engines, so they definitely use e-Commerce websites like Inline-6 Overnight.
+
+#### What do Inline-6 Overnight users need? Could their needs be met with useful content? If so, how could Inline-6 Overnight best deliver that content to them?
+
+The potential users of Inline-6 Overnight are mostly professionals in the tuning and auto repair industry, so they already know the product very well, and there’s no need to create content to trigger an emotional response on these users to convert them into paying users. They only need a company that is able to get and sell specific inline-6 engines in perfect condition and deliver them overnight without delays.
+
+#### Would the business run sales or offer discounts? How would the users most like to hear about these offers?
+
+Advertising good prices for the engines sold at Inline-6 Overnight on Facebook via eye-catching, informative and well-written posts may definitely work, but the best way to communicate these good prices to the auto businesses this website is targeting is via newsletter. This may definitely help gaining new customers and retaining existing ones.
+
+#### What are the goals of the business? Which marketing strategies would offer the best ways to meet those goals?
+
+The goal of Inline-6 Overnight is to sell specific engines to auto businesses – the company gets them directly from the factories, tuning shops and private owners at a good price and sells them to make a profit, but still at a reasonable price for the buying user. The marketing techniques suitable for this kind of business are believed to be Search Engine Optimization and email marketing – but a Facebook page (this is social media marketing) with posts advertising the company’s low prices for its engines is also an effective way to attract users to the website and converting them into paying users.
+
+#### Would the business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
+
+Acquiring engines straight from the factories, tuning shops and private owners, even at lower prices, is still quite expensive, and making a profit in the engine reselling business is challenging (though perfectly possible), so it’s a type of business that uses a lot of free and low-cost marketing options. In the case of Inline-6 Overnight, the strategies to be used will be SEO, social media marketing (using a Facebook page for the business – no paid ads) and email marketing (to send the business’ newsletter).
+
+### Search Engine Optimization
+
+The site was optimized by a careful selection of keywords related to car engines, specifically internal combustion engines and, in more detail, inline-six engines. The table below contains these relevant topics and an extensive selection of short-tail and long-tail keywords for each one of them, which has been trimmed down to include only the most relevant for the chosen topics, as well as for automotive businesses (like tuning shops, automobile repair shops, garages, workshops, car service specialists, etc.), which order a lot of car parts from suppliers online, including engines, and car enthusiasts, a community that uses the Internet to access information about cars, car parts and car knowledge all the time, apart from purchasing a lot of parts online as well (those who have a residential garage even order engines online directly, though it’s less common). The chosen topics/keywords are based on the creator of this website’s knowledge of the automotive business and the car community/culture worldwide – he’s a gearhead himself. These topics and keywords were also tested on Google Search, and the relevant returned search suggestions it gave were added to this list. All keywords were chosen based on their relevance, authority and volume ([Wordtracker](https://www.wordtracker.com/)) was also used for this purpose), and the end result is a mix of high volume and low competition terms that will be used throughout this website and hopefully help bringing a lot of visitors to it.
+
 ## User Experience (UX)
 
 ### • User Stories
@@ -196,7 +242,7 @@ Each User Story was created on GitHub using a User Story template created for th
 
 The MoSCoW technique (MUST-have, SHOULD-have, COULD-have, WON'T-have) was then used to add one of these specific labels to each of the User Stories based on the User Story's importance to the project - these labels were also created using the "Milestones" tab.
 
-Then, a Project called "Inline-6 Overnight User Stories" was created and, inside it, a Kanban Board, where all the User Stories were again transferred to. This simple Kanban Board has three columns - "Todo", "In Progress" and "Done" - and the User Stories would go from the "Todo" column to the "In Progress" column when they were being worked on. This was a huge help when tracking progress of what had been done and what still needed to be done throughout the project. When the User Story's tasks were performed and the User Story functionality was implemented (each User Story has its own set of tasks, and each of these were ticked and marked when completed), it would be finally moved to the "Done" column. This was basically how this project was planned and built. The Kanban Board for this project can be found [here](https://github.com/users/PedroMiguelFerreira/projects/5) - eleven User Stories were not implemented on this iteration, but they might be in the future (at the moment, they're all labelled as WON'T-have).
+Then, a Project called "Inline-6 Overnight User Stories" was created and, inside it, a Kanban Board, where all the User Stories were again transferred to. This simple Kanban Board has three columns - "Todo", "In Progress" and "Done" - and the User Stories would go from the "Todo" column to the "In Progress" column when they were being worked on. This was a huge help when tracking progress of what had been done and what still needed to be done throughout the project. When the User Story's tasks were performed and the User Story functionality was implemented (each User Story has its own set of tasks, and each of these were ticked and marked when completed), it would be finally moved to the "Done" column. This was basically how this project was planned and built. The Kanban Board for this project can be found [here](https://github.com/users/PedroMiguelFerreira/projects/5) - twelve User Stories were not implemented on this iteration, but they might be in the future (at the moment, they're all labelled as WON'T-have).
 
 ## Features
 
@@ -340,55 +386,23 @@ The W3C Markup Validator Service, the W3C CSS Validator Service, the JSHint Stat
 
 #### Fixed Bugs
 
-Countless bugs were found and fixed during the creation of this blog - the list is long, but here are the most memorable ones:
+Countless bugs were found and fixed during the creation of this e-Commerce website - the list is long, but here are the most memorable ones:
 
-• 
+• The Store/home page would throw an error if there were any products without an image. Solution: Add the imageURL method to the product model
 
-• 
+• The updateUserOrder function in cart.js would return an error because a CSRF token was not being sent. Solution: Usually, a CSRF token is sent in a form by passing it in within a form using {% csrf_token %} but, because JavaScript is being used to send data and a form is not actually being submitted, it was necessary to create a token and pass it in with the POST data (Django’s documentation – https://docs.djangoproject.com/en/3.0/ref/csrf/#ajax – provided a workaround to create a customized CSRF token)
 
-• 
+• When the user checked out, the CSRF token was not being created on the first submission or when the user checked out in incognito mode. So, when the user submits data, the POST data requires a CSRF token to be processed in the view but, for some reason but, in incognito mode or when the user checked out for the first time, the CSRF token was not being created (so, a session was not being created and the data was not being sent). Solution: the most secure solution that could be found at this stage was adding {% csrf_token %} to the form in checkout.html so the token is generated for that form, and reset the CSRF token value that is submitted with the POST data in the JavaScript code in checkout.html as well
 
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
-
-• 
+• A user could go from an empty cart page (with no products) to the checkout page and actually pay (0.00 EUR) for no products. Solution: Hide the checkout button on the cart page when there are no products on the cart by wrapping the checkout button in an if statement – {% if items %}
 
 #### Unfixed Bugs
 
-• 
-
-• 
+• Whenever a user pays for his/her products, he/she gets redirected to the main page and is informed that the payment was completed and that his/her order will be delivered the next working day. Immediately, an order is created in the database, and the superuser can see it in the admin area. This order will be set as "complete" and there'll be a transaction id number. There'll also be a new shipping address (if the user bought any physical products), and each item on the order will be shown separately on the order items tab. All good so far but, for some bizarre reason that the creator of this website can't even begin to explain, there's always an empty order (only one) on the orders tab in the admin area for every user/customer who bought something on the website. This order is always set as "not complete" and doesn't have a transaction id number. Even if the user/customer orders 20 times on the website, there's only an empty order (again, only one) on the order's list for that user/customer, which will become that user/customer's next order the next time he/she orders something on the website. For example, Alice orders something and pays, and order 50 is created in the admin area. Her order 50 is set to "complete" and has a transaction id number, so all is correct. But order 51 was also automatically created for Alice, set to "not complete" and with no transaction id number. It'll stay there as order 51 until Alice comes back to the website (a few weeks later, for example, and after many other customers ordered many times on the website) and orders again. Alice's order is created as normal, set to "complete" and with a transaction id number - order 75, for example. This new order - order 75 - is that empty order 51 that was automatically created for Alice and was hanging empty in the order list. It no longer exists as such - it's now the completed order 75 - and a new empty order (set to "not complete" and with no transaction id number) was, again, automatically created for Alice - order 76 - and will stay there until Alice buys something on the website again (it'll be used for her next order). This doesn't affect the normal order functionality of the website at all (this was even ran by tutors in Code Institute and it wasn't considered a big thing, it's just something the website does), but it's a silly bug that the creator of this website just couldn't get rid of, and a lot of time was spent trying to do so. Hopefully, the Assessment Team will see it the same way and no harm will come from this.
 
 ## Deployment
 
-GitHub is not built to handle backend languages like Python or frameworks like Django, so Heroku was used to deploy this project (all code was pushed to GitHub as normal, but the website was deployed using Heroku). DEBUG was set to False and the database, Stripe and AWS secret keys were hidden in the env.py file. The project was deployed using the following steps...
+GitHub is not built to handle backend languages like Python or frameworks like Django, so Heroku was used to deploy this project (all code was pushed to GitHub as normal, but the website was deployed using Heroku). DEBUG was set to False and the database, the project and Cloudinary secret keys were hidden in the env.py file. The project was deployed using the following steps...
 
 1.	Log in to Heroku.
 2.	Click on New in the top-right corner and select Create New App. A unique app name must be entered. Then, select the region and click on Create App.
@@ -406,7 +420,7 @@ GitHub is not built to handle backend languages like Python or frameworks like D
     e.	DISABLE_COLLECTSTATIC (followed by 1) - this is during development only; this field must be removed when deploying to production
 
 5.	On the Deploy tab, connect to GitHub (search for the repository name and click on the connect button).
-6.	Scroll to the bottom of the deployment page and select the preferred deployment type: click on Enable Automatic Deploys (for automatic deployment when you push updates to GitHub) or select the correct branch for deployment from the dropdown menu and click on Deploy Branch for manual deployment (this was the option chosen for this project).
+6.	Scroll to the bottom of the deployment page and select the preferred deployment type: click on Enable Automatic Deploys (for automatic deployment when you push updates to GitHub - this was the option chosen for this project) or select the correct branch for deployment from the dropdown menu and click on Deploy Branch for manual deployment.
 
 ### Forking the GitHub Repository
 
@@ -448,44 +462,66 @@ Click [here](https://docs.github.com/en/repositories/creating-and-managing-repos
 
 ### Code
 
-• 
+• Code Institute tutorials for any walkthrough projects are always invaluable but, for this project, the Boutique Ado videos on how to create an e-Commerce website were not used as the base for Inline-6 Overnight (the idea of the creator of this website is always to build a project as far from CI's walkthrough videos as possible, as students are advised to do so). Even so, a huge thank you to Code institute for the Boutique Ado videos - as massive as this walkthrough project may seem, a lot can be learned from them.
 
-• 
+• The W3Schools Online Web Tutorials were a huge help throughout the creation of this blog – some of them were extensively used as a source of code knowledge/confirmation.
 
-• 
+• Stack Overflow was extensively used to answer the huge amount of questions/doubts the creator of this blog had throughout the development process. The list of issues/bugs it helped resolve is too huge to recreate here (a lot of them were mentioned on the Fixed Bugs sub-section of this README.md file), but its usefulness was crucial to this project and had to be mentioned here.
 
-• 
+• Setting up Cloudinary for this project was challenging, to say the least - Matt Rudge's Codestar walkthrough was useful when doing it. A huge thank you to Matt for that.
 
-• 
+• The idea to use a system font stack already available on the user's machine, which eliminated the need to fetch a font elsewhere and makes load times faster, was taken from this GitHub repository by Doron Brayer:
 
-• 
+[font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif #665](https://github.com/necolas/normalize.css/issues/665)
 
-• 
+• Many tutorials were watched and used by the creator of this blog to learn about, for example, Django and JavaScript, and build the logic behind this project - the list is too long to be displayed, but a big thank you to all the creators of this kind of content, it was a huge help.
 
-• 
+• But no other tutorial was as useful to this project as Dennis Ivy's brilliant video tutorial on how to create a an e-Commerce website using Django that he made available for free on YouTube. Dennis is a software developer, a developer advocate at Agora, a Udemy instructor, a YouTuber and a contributor at Traversy Media, the creator of this website admires his work and this 6-video tutorial (though video number 5 was never used as there's no guest checkout functionality in Inline-6 Overnight) helped this website to see the light of day from the beginning - the core idea already existed, and the creator of Inline-6 Overnight knew what he wanted it to look like and do (the final product of the video tutorial looks quite different from the final version of this project), but the Agile planning of most of the site, including the creation and prioritization of most of the User Stories, as well as the creation of most of its model, greatly benefited from this tutorial, whose code was also substantially used in Inline-6 Overnight - but, though some of it may be fundamentally alike, significant parts of the code on the final version of the site are considerably different, which makes this project fairly original (it's an e-Commerce platform for car engines, with its own color scheme, theme images and products, and all written content is about engines and cars; Inline-6 Overnight was properly styled, and has, for example, product detail pages with product descriptions, a functional navbar with signup and login functionality (including a link to the admin area for the superuser), a footer, user message functionality, a checkout button on the cart page that is only accessible when there are products on the cart, etc., and the code in the backend was changed multiple times to suit the needs of this website (for example, and among other things, the guest checkout functionality on the tutorial was never implemented) and fix the many issues that inevitably and repeatedly came up during development - a lot of the code provided on the tutorial just wouldn't work, fit the purpose of Inline-6 Overnight or even provide functionality that would fit the assessment criteria for this project; Cloudinary was used to store all images, etc.; basically, what the user will see when using this site will look and feel quite different). So, many thanks to Dennis for sharing all this knowledge and teaching this wannabe-developer a great deal about Django, JavaScript and e-Commerce (the creator of this website has certainly learned a lot from this tutorial). For reference, here are the 6 videos, parts of which have been used as a base for this project:
+
+[Django Ecommerce Website | Setup & Templates | Part 1](https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)
+
+[Django Ecommerce Website | Data Structure | Part 2](https://www.youtube.com/watch?v=obZMr9URmVI&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=2)
+
+[Django Ecommerce Website | Add to Cart Functionality | Part 3](https://www.youtube.com/watch?v=woORrr3QNh8&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=3)
+
+[Missing CSRF Token Fix | Part 3.5](https://www.youtube.com/watch?v=pbTkIOChIu0&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=4)
+
+[Django Ecommerce Website | Guest User Cart | Part 4](https://www.youtube.com/watch?v=kH2FOWuA4uI&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=5)
+
+[PayPal Payment Integration | Django Ecommerce Website | Part 5](https://www.youtube.com/watch?v=33pnWTslX2E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=6)
 
 ### Content
 
-• 
+• The descriptions of all products on the product detail pages, as well as the text at the bottom of the Store/home page, were taken from Wikipedia (from the specific pages about each engine featured in Inline-6 Overnight). Some of the content on the website, however, is completely made up by the creator of this website (for example, the introductory text on the Store page, under the main image).
 
-• 
+• The Facebook icon in the footer was taken from [Font Awesome](https://fontawesome.com/).
 
 ### Media
 
-• 
+• The Store/main image was taken from [The Drive](https://www.thedrive.com/news/27205/nissan-puts-its-gt-rs-famous-rb26-inline-six-engine-back-into-production).
 
-• 
+• The favicon image was taken from [VectorStock](https://www.vectorstock.com/royalty-free-vector/car-engine-icon-vector-9632281).
 
-• 
+• The Toyota 2JZ-GTE image was taken from [PowerGT](http://www.powergt.club/2020/11/toyota-2jz-gte.html).
+
+• The Nissan RB26DETT image was taken from [FavCars](https://www.favcars.com/engines-nissan-rb26dett-wallpapers-210556.htm).
+
+• The BMW S54 image was taken from [Wallpaperup](https://www.wallpaperup.com/1278527/BMW_S54_B32.html).
+
+• The Ford Barra image was taken from [WhichCar](https://www.whichcar.com.au/features/ford-barra-turbo-mill-of-the-month-proflo-performance).
+
+• The BMW M88 image was taken from [BimmerLife](https://bimmerlife.com/2018/12/01/the-5-best-bmw-engines-pre-1990/).
+
+• EcuTek’s DeltaECU image was taken from [ecutek.com](https://www.ecutek.com/Files/Downloads/DeltaDashManual.aspx).
 
 ### Acknowledgements
 
 The creator of this blog would like to thank:
 
-• 
+• My Mentor Antonio for continuous helpful feedback.
 
-• 
+• Tutor support at Code Institute for all their help (the creator of this blog would like to specifically thank Ger and Scott - they're great at what they do).
 
-• 
+• [Code Institute](https://codeinstitute.net/ie/)'s Slack community for their support, and Code Institute itself and the many good people who work for CI.
 
-• 
+• All family members, friends and car aficionados who helped testing this website.
