@@ -126,7 +126,9 @@ def processOrder(request):
                 )
     else:
         print('User is not logged in')
-    messages.info(request, 'Transaction completed! Your order will be delivered the next working day. Thank you for shopping with Inline-6 Overnight.')
+    messages.info(request, ('Transaction completed! Your order will be '
+                            'delivered the next working day. Thank you '
+                            'for shopping with Inline-6 Overnight.'))
     return JsonResponse('Payment complete!', safe=False)
 
 
@@ -164,7 +166,8 @@ def login_view(request):
         else:
             messages.error(request, "Invalid username or password.")
     form = AuthenticationForm()
-    return render(request=request, template_name="store/login.html", context={"login_form": form})
+    return render(request=request, template_name="store/login.html",
+                  context={"login_form": form})
 
 
 def logout_view(request):
@@ -193,5 +196,6 @@ def product_detail(request, id):
         cartItems = order['get_cart_items']
 
     product = Product.objects.get(id=id)
-    context = {'items': items, 'order': order, 'cartItems': cartItems, 'data': product}
+    context = {'items': items, 'order': order, 'cartItems': cartItems,
+               'data': product}
     return render(request, 'store/product_detail.html', context)

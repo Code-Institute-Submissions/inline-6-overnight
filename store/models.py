@@ -22,7 +22,8 @@ def create_or_update_user_customer(sender, instance, created, **kwargs):
     """ Create or update the user Customer object """
     if created:
         Customer.objects.create(
-            user=instance, email=instance.email, name=f"{instance.first_name} {instance.last_name}")
+            user=instance, email=instance.email,
+            name=f"{instance.first_name} {instance.last_name}")
     instance.customer.save()
 
 
