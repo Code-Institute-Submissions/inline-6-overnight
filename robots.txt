@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Sitemap: https://inline-6-overnight.herokuapp.com/sitemap.xml
