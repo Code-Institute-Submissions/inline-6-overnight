@@ -17,5 +17,6 @@ def handler404(request, exception):
         order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
         cartItems = order['get_cart_items']
 
+    context = {'items': items, 'order': order, 'cartItems': cartItems}
     """ Error Handler 404 - Page Not Found """
-    return render(request, "errors/404.html", status=404)
+    return render(request, "errors/404.html", context, status=404)
