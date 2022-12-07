@@ -10,11 +10,20 @@
                     <br>
                     <table class="table">
                         <tr>
-                            <th><h5 class="cart-size">Items: <strong>{{order.get_cart_items}}</strong></h5></th>
-                            <th><h5 class="cart-size">Total: <strong>€{{order.get_cart_total|floatformat:2}}</strong></h5></th>
+                            <th>
+                                <h5 class="cart-size">
+                                    Items: <strong>{{order.get_cart_items}}</strong>
+                                </h5>
+                            </th>
+                            <th>
+                                <h5 class="cart-size">
+                                    Total: <strong>€{{order.get_cart_total|floatformat:2}}</strong>
+                                </h5>
+                            </th>
                             {% if items %}
                                 <th>
-                                    <a style="float: right; margin: 5px;" class="btn btn-dark cart-size" href="{% url 'checkout' %}">
+                                    <a style="float: right; margin: 5px;" class="btn btn-dark cart-size" 
+                                    href="{% url 'checkout' %}">
                                         Checkout
                                     </a>
                                 </th>
@@ -36,7 +45,7 @@
 
                     {% for item in items %}
                     <div class="cart-row">
-                        <div style="flex: 2"><img class="row-image" src="{{item.product.imageURL}}"></div>
+                        <div style="flex: 2"><img class="row-image" src="{{item.product.imageURL}}" alt="Product"></div>
                         <div style="flex: 2"><p>{{item.product.name}}</p></div>
                         <div style="flex: 1"><p>€{{item.product.price|floatformat:2}}</p></div>
                         <div style="flex: 1">
