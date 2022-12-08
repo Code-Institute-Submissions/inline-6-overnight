@@ -102,6 +102,9 @@ class OrderItem(models.Model):
 
 
 class ShippingAddress(models.Model):
+    """
+    ShippingAddress model
+    """
     customer = models.ForeignKey(
         Customer, on_delete=models.SET_NULL, blank=True, null=True)
     order = models.ForeignKey(

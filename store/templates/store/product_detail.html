@@ -1,7 +1,6 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-
     <div class="text-center mt-3">
         <img src="{{ data.imageURL }}" class="img-fluid w-75" alt="Product image">
     </div>
@@ -17,5 +16,4 @@
     <!-- Back button -->
     <a href="{% url 'store' %}" class="btn btn-dark">Back</a>
     <br/><br/><br/>
-
 {% endblock content %}
