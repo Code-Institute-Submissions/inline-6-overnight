@@ -11,14 +11,14 @@
                     <table class="table">
                         <tr>
                             <th>
-                                <h5 class="cart-size">
+                                <p class="cart-size">
                                     Items: <strong>{{order.get_cart_items}}</strong>
-                                </h5>
+                                </p>
                             </th>
                             <th>
-                                <h5 class="cart-size">
+                                <p class="cart-size">
                                     Total: <strong>€{{order.get_cart_total|floatformat:2}}</strong>
-                                </h5>
+                                </p>
                             </th>
                             {% if items %}
                                 <th>
