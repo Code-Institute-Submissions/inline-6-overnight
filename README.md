@@ -48,6 +48,20 @@ The goal of Inline-6 Overnight is to sell specific engines to auto businesses �
 
 Acquiring engines straight from the factories, tuning shops and private owners, even at lower prices, is still quite expensive, and making a profit in the engine reselling business is challenging (though perfectly possible), so it’s a type of business that uses a lot of free and low-cost marketing options. In the case of Inline-6 Overnight, the strategies to be used will be SEO, social media marketing (using a Facebook page for the business – no paid ads) and email marketing (to send the business’ newsletter).
 
+#### Facebook Page
+
+[Inline-6 Overnight's Facebook page](https://www.facebook.com/people/Inline-6-Overnight/100088354246797/)
+
+![Facebook page 1](docs/facebook-page-1.png)
+
+![Facebook page 2](docs/facebook-page-2.png)
+
+![Facebook page 3](docs/facebook-page-3.png)
+
+![Facebook page 4](docs/facebook-page-4.png)
+
+![Facebook page 5](docs/facebook-page-5.png)
+
 #### Mailchimp Email Marketing Service
 
 Users are encouraged to sign up to receive Inline-6 Overnight’s newsletter, a great way for the user to know about any good prices the company may offer for its engines and a useful marketing technique to increase engagement with the website. The link to the signup form is on the footer and shown on every page. The email marketing service used is Mailchimp, and it allows the website administrator to send marketing emails through the platform. Below is a screenshot of Inline-6 Overnight's Mailchimp dashboard:
@@ -65,6 +79,20 @@ Users are encouraged to sign up to receive Inline-6 Overnight’s newsletter, a 
 The site was optimized by a careful selection of keywords related to car engines, specifically internal combustion engines and, in more detail, inline-six engines. The table below contains these relevant topics and an extensive selection of short-tail and long-tail keywords for each one of them, which has been trimmed down to include only the most relevant for the chosen topics, as well as for automotive businesses (like tuning shops, automobile repair shops, garages, workshops, car service specialists, etc.), which order a lot of car parts from suppliers online, including engines, and car enthusiasts, a community that uses the Internet to access information about cars, car parts and car knowledge all the time, apart from purchasing a lot of parts online as well (those who have a residential garage even order engines online directly, though it’s less common). The chosen topics/keywords are based on the creator of this website’s knowledge of the automotive business and the car community/culture worldwide – he’s a gearhead himself. These topics and keywords were also tested on Google Search, and the relevant returned search suggestions it gave were added to this list. All keywords were chosen based on their relevance, authority and volume ([Wordtracker](https://www.wordtracker.com/) was also used for this purpose), and the end result is a mix of high volume and low competition terms that will be used throughout this website and hopefully help bringing a lot of visitors to it.
 
 ![Keyword table](docs/keyword-table.png)
+
+#### sitemap.xml
+
+A sitemap file with a list of important URLs was added to ensure that search engines are able to easily navigate through the site and understand its structure. This was made using [XML-Sitemaps.com](xml-sitemaps.com) by following these steps:
+
+1.	Paste the URL of the deployed site into XML-Sitemaps
+2.	Download the sitemap.xml file
+3.	Add the file to the project's root folder, renamed as "sitemap.xml"
+
+#### robots.txt
+
+A robots.txt file was created to tell search engines where not to go on the website and increase the quality of the site, ultimately improving the SEO rating.
+
+![Inline-6's robots.txt file](docs/robots-txt-file.png)
 
 ## User Experience (UX)
 
