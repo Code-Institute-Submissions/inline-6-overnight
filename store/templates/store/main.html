@@ -83,7 +83,7 @@
                 </ul>
                 <div class="form-inline my-2 my-lg-0">
                     {% if user.is_authenticated %}
-                        <li class="nav-item dropdown">
+                        <div class="nav-item dropdown">
                             <a class="dropdown-toggle btn btn-light" href="#" id="navbarDropdown" role="button" 
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ user.first_name }} {{ user.last_name }}
@@ -94,18 +94,18 @@
                                 {% endif %}
                                 <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
                             </div>
-                        </li>
+                        </div>
                         <a href="{% url 'cart' %}">
-                        <img  id="cart-icon" src="{% static 'images/cart.png' %}">
+                        <img  id="cart-icon" src="{% static 'images/cart.png' %}" alt="Cart image">
                         </a>
                         <p id="cart-total">{{cartItems}}</p>
                     {% else %}
-                        <li>
+                        <div>
                             <a href="{% url 'signup' %}" class="btn btn-light">Sign up</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <a href="{% url 'login' %}" class="btn btn-light">Log in</a>
-                        </li>
+                        </div>
                     {% endif %}
                </div>
             </div>
@@ -171,7 +171,8 @@
                                                 aria-label="Made with Mailchimp (opens in a new tab)" 
                                                 title="Mailchimp - email marketing made easy and fun" 
                                                 rel="external noopener noreferrer nofollow">
-                                                    <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg">
+                                                    <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg" 
+                                                    alt="Mailchimp logo">
                                                 </a>
                                             </p>
                                         </div>
