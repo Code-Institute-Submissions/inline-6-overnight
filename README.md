@@ -1,10 +1,10 @@
 # Inline-6 Overnight
 
-[View the live project here.]()
+[View the live project here.](https://inline-6-overnight.herokuapp.com/)
 
 This is the e-Commerce website of Inline-6 Overnight, a company that specializes in the procurement, resale, shipment and delivery of specific, brand new straight-six combustion engines at the best available prices, delivering them the next business day. It provides engine solutions to professional tuning shops, automobile repair businesses, garages, workshops, car service specialists and private owners. It’s designed to be a very simple-to-use and functional website, and also responsive and accessible on a range of devices, making it easy to navigate for any potential customers.
 
-![Am I Responsive]()
+![Am I Responsive](docs/am-i-responsive.png)
 
 ## Marketing Strategy
 
@@ -16,7 +16,7 @@ Engine replacement/tuning is mostly done by professional tuning shops, automobil
 
 #### What will they buy?
 
-Inline-six engines (internal combustion engine with six cylinders mounted in a straight line), specifically the three best inline-six engines in the world: Toyota’s 2JZ-GTE, Nissan’s RB26DETT and BMW’s S54. This is a physical product, so a lot of detail needs to be shown to the website user – name, description, price, shipping/delivery costs, postal address to ship the engines to, images of the engines, etc.: these fields will be included in the database models that’ll be used on this website (no need to include, for example, product ratings/reviews, as these engines are some of the best in the world and are made by some of the best car brands in the world – the car community/businesses know how good they are – and the same applies to search and filter results – only three engines will be sold). There’s also another separate product that will be sold – a digital product: car tuning software, so there’s instant access to this product when payment is complete, and the storage of this product will be handled on the database as well. Order notifications will be sent after any purchase.
+Inline-six engines (internal combustion engines with six cylinders mounted in a straight line), specifically the five best inline-six engines in the world: Toyota’s 2JZ-GTE, Nissan’s RB26DETT, BMW’s S54, Ford's Barra and BMW's M88. This is a physical product, so a lot of detail needs to be shown to the website user – name, description, price, shipping/delivery costs, postal address to ship the engines to, images of the engines, etc.: these fields will be included in the database models that’ll be used on this website (no need to include, for example, product ratings/reviews, as these engines are some of the best in the world and are made by some of the best car brands in the world – the car community/businesses know how good they are – and the same applies to search and filter results – only five engines will be sold). There’s also another separate product that will be sold – a digital product: car tuning software, so there’s instant access to this product when payment is complete, and the storage of this product will be handled on the database as well.
 
 #### How will they pay?
 
@@ -30,7 +30,7 @@ Professional tuning shops, automobile repair shops, garages, workshops and car s
 
 #### Which online platforms would Inline-6 Overnight find lots of its users? Would its users use social media? If so, which platforms would Inline-6 Overnight find them on?
 
-Most car people in the world can usually be found online on blogs dedicated to cars (it’s very common in the car enthusiasts’ community worldwide). People who own a tuning shop or an automobile repair shop that still works with internal combustion engines, for example, will probably be in the 30-55 age group. According to Khoros, 77% of people aged 30-49 use Facebook, and 51% of people aged 50-65 use Facebook (more than Instagram, Twitter, etc.), making Facebook the perfect social media platform to find users for a website that sells internal combustion engines. YouTube has a large audience in this age group, too, but the cost of creating professional video content makes it prohibitive for many businesses, including Inline-6 Overnight, and it wouldn’t suit a company that is basically an engine reseller (not a lot of useful/relevant video content can be created, the company doesn’t even provide any auto repair or tuning services that could be filmed and turned into good brand content). These users will, however, order parts online, including engines, so they definitely use e-Commerce websites like Inline-6 Overnight.
+Most car people in the world can usually be found online on blogs dedicated to cars (it’s very common in the car enthusiasts’ community worldwide). People who own a tuning shop or an automobile repair shop that still works with internal combustion engines, for example, will probably be in the 30-55 age group. According to [Khoros](https://khoros.com/resources/social-media-demographics-guide), 77% of people aged 30-49 use Facebook, and 51% of people aged 50-65 use Facebook (more than Instagram, Twitter, etc.), making Facebook the perfect social media platform to find users for a website that sells internal combustion engines. YouTube has a large audience in this age group, too, but the cost of creating professional video content makes it prohibitive for many businesses, including Inline-6 Overnight, and it wouldn’t suit a company that is basically an engine reseller (not a lot of useful/relevant video content can be created, the company doesn’t even provide any auto repair or tuning services that could be filmed and turned into good brand content). These users will, however, order parts online, including engines, so they definitely use e-Commerce websites like Inline-6 Overnight.
 
 #### What do Inline-6 Overnight users need? Could their needs be met with useful content? If so, how could Inline-6 Overnight best deliver that content to them?
 
@@ -48,9 +48,23 @@ The goal of Inline-6 Overnight is to sell specific engines to auto businesses �
 
 Acquiring engines straight from the factories, tuning shops and private owners, even at lower prices, is still quite expensive, and making a profit in the engine reselling business is challenging (though perfectly possible), so it’s a type of business that uses a lot of free and low-cost marketing options. In the case of Inline-6 Overnight, the strategies to be used will be SEO, social media marketing (using a Facebook page for the business – no paid ads) and email marketing (to send the business’ newsletter).
 
+#### Mailchimp Email Marketing Service
+
+Users are encouraged to sign up to receive Inline-6 Overnight’s newsletter, a great way for the user to know about any good prices the company may offer for its engines and a useful marketing technique to increase engagement with the website. The link to the signup form is on the footer and shown on every page. The email marketing service used is Mailchimp, and it allows the website administrator to send marketing emails through the platform. Below is a screenshot of Inline-6 Overnight's Mailchimp dashboard:
+
+![Inline-6 Overnight's Mailchimp dashboard]()
+
+#### Privacy Policy
+
+[Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to ensure that the website is compliant with the European Privacy Policy Rules.
+
+[Inline-6 Overnight's Privacy Policy](https://www.privacypolicygenerator.info/live.php?token=vZ9uwn90t9o5EtEHjNUJKbSbxLq0Ga9Q)
+
 ### Search Engine Optimization
 
-The site was optimized by a careful selection of keywords related to car engines, specifically internal combustion engines and, in more detail, inline-six engines. The table below contains these relevant topics and an extensive selection of short-tail and long-tail keywords for each one of them, which has been trimmed down to include only the most relevant for the chosen topics, as well as for automotive businesses (like tuning shops, automobile repair shops, garages, workshops, car service specialists, etc.), which order a lot of car parts from suppliers online, including engines, and car enthusiasts, a community that uses the Internet to access information about cars, car parts and car knowledge all the time, apart from purchasing a lot of parts online as well (those who have a residential garage even order engines online directly, though it’s less common). The chosen topics/keywords are based on the creator of this website’s knowledge of the automotive business and the car community/culture worldwide – he’s a gearhead himself. These topics and keywords were also tested on Google Search, and the relevant returned search suggestions it gave were added to this list. All keywords were chosen based on their relevance, authority and volume ([Wordtracker](https://www.wordtracker.com/)) was also used for this purpose), and the end result is a mix of high volume and low competition terms that will be used throughout this website and hopefully help bringing a lot of visitors to it.
+The site was optimized by a careful selection of keywords related to car engines, specifically internal combustion engines and, in more detail, inline-six engines. The table below contains these relevant topics and an extensive selection of short-tail and long-tail keywords for each one of them, which has been trimmed down to include only the most relevant for the chosen topics, as well as for automotive businesses (like tuning shops, automobile repair shops, garages, workshops, car service specialists, etc.), which order a lot of car parts from suppliers online, including engines, and car enthusiasts, a community that uses the Internet to access information about cars, car parts and car knowledge all the time, apart from purchasing a lot of parts online as well (those who have a residential garage even order engines online directly, though it’s less common). The chosen topics/keywords are based on the creator of this website’s knowledge of the automotive business and the car community/culture worldwide – he’s a gearhead himself. These topics and keywords were also tested on Google Search, and the relevant returned search suggestions it gave were added to this list. All keywords were chosen based on their relevance, authority and volume ([Wordtracker](https://www.wordtracker.com/) was also used for this purpose), and the end result is a mix of high volume and low competition terms that will be used throughout this website and hopefully help bringing a lot of visitors to it.
+
+![Keyword table](docs/keyword-table.png)
 
 ## User Experience (UX)
 
