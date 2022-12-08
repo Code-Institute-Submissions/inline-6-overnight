@@ -66,7 +66,7 @@ Acquiring engines straight from the factories, tuning shops and private owners, 
 
 Users are encouraged to sign up to receive Inline-6 Overnight’s newsletter, a great way for the user to know about any good prices the company may offer for its engines and a useful marketing technique to increase engagement with the website. The link to the signup form is on the footer and shown on every page. The email marketing service used is Mailchimp, and it allows the website administrator to send marketing emails through the platform. Below is a screenshot of Inline-6 Overnight's Mailchimp dashboard:
 
-![Inline-6 Overnight's Mailchimp dashboard]()
+![Inline-6 Overnight's Mailchimp dashboard](docs/mailchimp-dashboard.png)
 
 #### Privacy Policy
 
