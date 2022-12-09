@@ -388,15 +388,47 @@ o
 
 ### Validation Testing
 
-The W3C Markup Validator Service, the W3C CSS Validator Service, the JSHint Static Code Analysis Tool for JavaScript and the PEP8 Online Checker were used to validate every page of this project to ensure there were no syntax errors.
+The W3C Markup Validator Service, the W3C CSS Validator Service, the JSHint Static Code Analysis Tool for JavaScript and Code Institute's Python Linter were used to validate every page of this project to ensure there were no syntax errors.
 
 • W3C Markup Validator (results)
 
-• W3C CSS Validator - [Results]()
+[404](docs/html-validator-results-error-page.png)
 
-• JSHint - [Results]()
+[cart](docs/html-validator-results-cart-page.png)
 
-• PEP8 Online Checker (results)
+[checkout](docs/html-validator-results-checkout-page.png)
+
+[login](docs/html-validator-results-login-page.png)
+
+[main/store](docs/html-validator-results-main-and-store-pages.png)
+
+[product_detail](docs/html-validator-results-product-detail-page.png)
+
+[signup](docs/html-validator-results-signup-page.png)
+There are four errors on this page when validation is ran - this is because a UserCreationForm was imported from .forms and used to create the content of this page, so it's a Django backend thing and can't be changed.
+
+• W3C CSS Validator - [Results](docs/css-validator-results.png)
+
+• JSHint (results)
+
+[cart.js](docs/javascript-validator-results-cart-js.png)
+The three warnings on this file are not syntax errors and do not impact any functionality, so they were ignored. The same applies to both undefined variables (these tend to be defined in other files/pages).
+
+[main.html - Part 1](docs/javascript-validator-results-main-page-1.png)
+The 2 undefined variables on this page are not syntax errors and do not impact any functionality, and they also tend to be defined in other files/pages, so they were ignored.
+
+[main.html - Part 2](docs/javascript-validator-results-main-page-2.png)
+The 4 undefined/unused variables on this page are not syntax errors and do not impact any functionality, and they also tend to be defined in other files/pages (namely the undefined variables), so they were ignored.
+
+[checkout.html - Part 1](docs/javascript-validator-results-checkout-page-1.png)
+The 2 undefined variables on this page are not syntax errors and do not impact any functionality, and they also tend to be defined in other files/pages, so they were ignored.
+
+[checkout.html - Part 2](docs/javascript-validator-results-checkout-page-2.png)
+The two warnings on this file are not syntax errors and do not impact any functionality, so they were ignored. The same applies to the four undefined/unused variables (these tend to be defined in other files/pages - namely the undefined variables).
+
+• Code Institute's Python Linter (results)
+
+
 
 ### Testing User Stories from the User Experience (UX) Section
 

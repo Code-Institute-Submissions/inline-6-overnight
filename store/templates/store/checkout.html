@@ -70,7 +70,7 @@
         <script src="https://www.paypal.com/sdk/js?client-id=AY6L0BrA4KKQtYZIGNBHS76tEEgravANJHyAYClNUPQ5uhtgjUFUIsU1hLgZhyHG6GYBTepHgMqQhNsz&currency=EUR&disable-funding=credit"></script>
 
         <script>
-            var total = '{{order.get_cart_total}}'
+            var total = '{{order.get_cart_total}}';
             // Render the PayPal button into #paypal-button-container
             paypal.Buttons({
 
@@ -93,7 +93,7 @@
                 // On approve method to finalize the transaction
                 onApprove: function(data, actions) {
                     return actions.order.capture().then(function(details) {
-                        submitFormData()
+                        submitFormData();
                     });
                 }
     
@@ -103,14 +103,14 @@
 
         <!-- JavaScript code for the checkout page -->
         <script type="text/javascript">
-            var shipping = '{{order.shipping}}'
+            var shipping = '{{order.shipping}}';
             // To hide the shipping form for digital products
             if (shipping == 'False') {
-                document.getElementById('shipping-info').innerHTML = ''
+                document.getElementById('shipping-info').innerHTML = '';
             }
             // To hide the logged-in user's info
             if (user != 'AnonymousUser') {
-                document.getElementById('user-info').innerHTML = ''
+                document.getElementById('user-info').innerHTML = '';
             }
             if (shipping == 'False' && user != 'AnonymousUser') {
                 // To hide the entire form if the user is logged in and shipping is False
@@ -120,25 +120,25 @@
                 document.getElementById('payment-info').classList.remove("hidden");
             }
             // To hide the button and open the payment option on submit
-            var form = document.getElementById('form')
-            csrftoken = form.getElementsByTagName("input")[0].value
-            console.log('Newtoken:', form.getElementsByTagName("input")[0].value)
+            var form = document.getElementById('form');
+            csrftoken = form.getElementsByTagName("input")[0].value;
+            console.log('Newtoken:', form.getElementsByTagName("input")[0].value);
             form.addEventListener('submit', function(e) {
-                e.preventDefault()
-                console.log('Form Submitted...')
-                document.getElementById('form-button').classList.add('hidden')
-                document.getElementById('payment-info').classList.remove('hidden')
-                })
+                e.preventDefault();
+                console.log('Form Submitted...');
+                document.getElementById('form-button').classList.add('hidden');
+                document.getElementById('payment-info').classList.remove('hidden');
+                });
             // To add an event handler to the new "payment-submit" button
             // and create a function to trigger on submission
             function submitFormData() {
-                console.log('Payment button clicked')
+                console.log('Payment button clicked');
 
                 var userFormData = {
                     'name': null,
                     'email': null,
                     'total': total,
-                }
+                };
 
                 var shippingInfo = {
                     'address': null,
@@ -146,22 +146,22 @@
                     'county': null,
                     'postcode': null,
                     'country': null,
-                }
+                };
 
                 if (shipping != 'False') {
-                    shippingInfo.address = form.address.value
-                    shippingInfo.city = form.city.value
-                    shippingInfo.county = form.county.value
-                    shippingInfo.postcode = form.postcode.value
-                    shippingInfo.country = form.country.value
+                    shippingInfo.address = form.address.value;
+                    shippingInfo.city = form.city.value;
+                    shippingInfo.county = form.county.value;
+                    shippingInfo.postcode = form.postcode.value;
+                    shippingInfo.country = form.country.value;
                 }
 
                 if (user == 'AnonymousUser') {
-                    userFormData.name = form.name.value
-                    userFormData.email = form.email.value
+                    userFormData.name = form.name.value;
+                    userFormData.email = form.email.value;
                 }
 
-                var url = "/process_order/"
+                var url = "/process_order/";
                 fetch(url, {
                     method:'POST',
                     headers: {
@@ -174,9 +174,9 @@
                 .then((data) => {
                     console.log('Success:', data);
                     alert('Transaction completed! Your order will be delivered the next working day. Thank you for shopping with Inline-6 Overnight.');
-                    window.location.href = "{% url 'store' %}"
+                    window.location.href = "{% url 'store' %}";
 
-                    })
+                    });
 
             }
         </script>
