@@ -116,7 +116,7 @@ o update the list of items in the cart so that I can change the quantity of item
 
 o access a shipping address form on the checkout page so that I can fill it out depending on whether my cart contains an item that needs to be shipped or not
 
-o use the website's footer so that I can click on its links, access the business' social media accounts and subscribe to the newsletter
+o use the website's footer so that I can click on its links, access the business' social media account and subscribe to the newsletter
 
 o register on the website so that I can log into the site to add products to my cart, check out and pay for my order
 
@@ -140,6 +140,8 @@ o have access to the website's privacy policy so that I know how my data is bein
 
 o (and though I'm a person with disabilities) use the website's features so that I can access the site as easily as users who do not have special needs do
 
+o click on a link on the footer and provide my email address to sign up for the website's newsletter so that I can be updated on any new products or good prices
+
 #### As a developer, I can:
 
 o get the project set up so that I can start creating code for it
@@ -156,7 +158,7 @@ o create the necessary models so that I can set up the project's database
 
 o add in some user data in the admin area so that I can render it on the cart and checkout pages
 
-o hide the user fields when the user is logged in so that I can prevent the logged in user from seeing them; and I can hide the shipping form altogether if the items don't need shipping so the user can go straight to the payment option
+o hide the user fields when the user is logged in so that I can prevent the logged in user from seeing them; and I can hide the shipping form altogether if the items don't need shipping so the user can go straight to the payment options
 
 o build out a view in the backend that will take the checkout form data so that I can use the fetch API to send POST data from the submitFormData function and add logic to the view to process orders
 
@@ -164,9 +166,9 @@ o design the store page so that I can start adding functionality, style and prod
 
 o click on a link on the navbar so that I can access the admin area through the frontend without the need to open the /admin URL and enter my superuser login details
 
-o use Heroku as a cloud-hosting solution so that the website can be used accessed by any user that is connected to the Internet
+o use Heroku as a cloud-hosting solution so that the website can be used/accessed by any user that is connected to the Internet
 
-o create an AWS S3 Bucket and an IAM user so that I can store the website's static and media files
+o install Cloudinary so that I can use it as the the image-hosting service to upload the images used on the website and to store all static assets
 
 o create a sitemap.xml file so that I can list the website’s important page URLs and make sure that search engines can crawl/navigate through them
 
