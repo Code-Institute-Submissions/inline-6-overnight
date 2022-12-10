@@ -384,6 +384,8 @@ o
 
 • [XML-Sitemaps.com](https://www.xml-sitemaps.com/): used to create a sitemap file with a list of important URLs to ensure that search engines are able to easily navigate through the site and understand its structure
 
+• [Wordtracker](https://www.wordtracker.com/): all keywords used on this website for SEO purposes were chosen based on their relevance, authority and volume, and Wordtracker was the perfect tool for the job
+
 ## Testing
 
 ### Validation Testing
@@ -428,7 +430,23 @@ The two warnings on this file are not syntax errors and do not impact any functi
 
 • Code Institute's Python Linter (results)
 
+Only .py pages that were created/changed by the creator of this project were validated using PEP8.
 
+[settings.py](docs/python-validator-results-settings-py.png)
+
+[inline_6_overnight - urls.py](docs/python-validator-results-inline-6-overnight-urls-py.png)
+
+[inline_6_overnight - views.py](docs/python-validator-results-inline-6-overnight-views-py.png)
+
+[admin.py](docs/python-validator-results-admin-py.png)
+
+[forms.py](docs/python-validator-results-forms-py.png)
+
+[models.py](docs/python-validator-results-models-py.png)
+
+[store - urls.py](docs/python-validator-results-store-urls-py.png)
+
+[store - views.py](docs/python-validator-results-store-views-py.png)
 
 ### Testing User Stories from the User Experience (UX) Section
 
