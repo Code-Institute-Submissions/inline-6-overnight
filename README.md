@@ -458,33 +458,41 @@ Google Chrome's DevTools were used to thoroughly test this website, including th
 
 ### Testing User Stories from the User Experience (UX) Section
 
+During development, each User Story was manually tested countless times, but the following table tracks the final manual testing of each User Story after deployment:
+
+![Testing User Stories 1](docs/testing-user-stories-1.png)
+
+![Testing User Stories 2](docs/testing-user-stories-2.png)
+
 ### Further Testing
 
-• 
+• The website was tested on the Google Chrome, Mozilla Firefox and Microsoft Edge browsers by the creator of this blog. It was not tested on Internet Explorer as it's no longer supported, but was tested on the Safari browser by friends and family, and the feedback was good.
 
-• 
+• The website was viewed on a variety of devices such as large laptops, medium/smaller laptops, tablets, phablets, larger mobile phones and medium/smaller mobile phones - it was fully responsive and functional in all of them.
 
-• 
+• A large amount of testing was done to ensure that all links on the blog were linking correctly. The same was done for all the external links, including the Facebook icon and the newsletter functionality on the footer. All features and functionality were also tested on all possible devices.
 
-• 
+• Friends, family members and car aficionados were asked to review the site and documentation to point out any bugs and/or user experience issues - feedback was good.
 
 ### Security
 
-• 
+• PayPal is used as the online payment processing system for Inline-6 Overnight. Specifically, a PayPal Sandbox account (a self-contained, virtual testing environment that simulates the live PayPal production environment and provides a shielded space where the developer can initiate and watch while his/her app processes PayPal API payment requests without touching any live PayPal accounts) was created by the creator of this website and linked to this project so users can purchase Inline-6 Overnight's products through mock transactions only (no live/real payments will go through - for that to happen, a live sandbox account would have to be created and linked to this project using a new Client ID key, which is not the purpose of Inline-6 Overnight as it was created merely as a school project). The test (fake) card numbers can be found [here](https://developer.paypal.com/tools/sandbox/card-testing/) (more detailed information on this can be found on the Features section of this README).
 
-• 
+• All secret keys (for the database, the project and Cloudinary) are stored in the env.py file, which was added to the .gitignore file, to prevent unwanted connections to the database - this was set up before the first push to GitHub. For the PayPal payment options, no secret keys were used - client-side integration was used on this project instead of server-side integration (information is still sent to the database for every payment, and client-side integration was used because it's a simpler option to integrate on any project), so the only key used was PayPal's Sandbox Client ID key, which is okay to be public and is shown on the project's code, specifically on the checkout.html template, on line 70 (if server-side integration was used, PayPal's Sandbox Secret key would have to be hidden in env.py) - more information on this topic can be found [here](https://stackoverflow.com/questions/52851731/is-paypal-checkout-client-integration-safe-for-browser) and [here](https://www.youtube.com/watch?v=33pnWTslX2E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=6).
 
-• 
+• There's a runtime.txt file that is visible in the GitHub repository - this was created together with Tutor Support as there were errors in the terminal and during deployment causing all sorts of issues due to a conflict with the Django version being used. This runtime.txt file fixed the issue, and the creator of this blog was advised that there was no need to hide it.
 
-• 
+• The db.sqlite3 file (used as the local database during development) was added to the .gitignore file as well and is, therefore, also hidden.
 
-• 
+• The products.json file is visible in the GitHub repository, too - again, the creator of this website was advised that there was no need to hide it. This file was used to transfer all products to the new ElephantSQL database with a new superuser and avoid several issues like a corrupt database - Tutor Support brilliantly came up with the idea to use this file not to lose the products' information. There's no secret information in it, so there was no need to hide it (and the creator of this blog was actually advised to keep it just in case). 
 
-• 
+• DEBUG was set to False (specifically in env.py) right before deployment to prevent access to error screens and code.
 
-• 
+• Registration/authentication was set up to ensure that only logged-in users can add products to their cart, checkout and pay for those products.
 
-• 
+• Cross-Site Request Forgery (CSRF) tokens were used to prevent requests to the backend server being created for malicious purposes, hide the "Continue" button and open the payment option on submit, add an event handler to the new "payment-submit" button and create a function to trigger on submission, and prevent the updateUserOrder function in the cart.js file to throw an error.
+
+• Django handles the defensive design used to make sure users can't submit empty fields on forms (to sign up, log in, add the order's shipping address before payment, etc.).
 
 ### Known Bugs
 
@@ -642,7 +650,7 @@ Click [here](https://docs.github.com/en/repositories/creating-and-managing-repos
 
 ### Content
 
-• The descriptions of all products on the product detail pages, as well as the text at the bottom of the Store/home page, were taken from Wikipedia (from the specific pages about each engine featured in Inline-6 Overnight). Some of the content on the website, however, is completely made up by the creator of this website (for example, the introductory text on the Store page, under the main image).
+• The descriptions of all products on the product detail pages, as well as the text at the bottom of the Store/home page, were taken from Wikipedia (from the specific pages about each engine featured in Inline-6 Overnight) and [Donut Media's video about the inline-6 engine](https://www.youtube.com/watch?v=JfaJ35vVQ9A) (a link to it is provided on the text at the bottom of the Store/home page itself). Some of the content on the website, however, is completely made up by the creator of this website (for example, the introductory text on the Store page, under the main image).
 
 • The Facebook icon in the footer was taken from [Font Awesome](https://fontawesome.com/).
 
