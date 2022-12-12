@@ -290,21 +290,99 @@ Then, a Project called "Inline-6 Overnight User Stories" was created and, inside
 
 ## Features
 
-• 
+• Favicon
 
-o 
+o The favicon for this blog - very appropriately, an engine - is visible on browser tabs to help users identifying the website.
 
-• 
+![Favicon](static/images/favicon-engine.png)
 
-o 
+• Navigation Bar
 
-o 
+o Built using Bootstrap and featured at the top of every page on this website, this fully responsive navigation bar (the user can click on the hamburger menu - three bars - in the top right corner to toggle the menu when using it in smaller devices) introduces the user to the site - when the user is not logged in, it shows links to the the "Sign up" and "Log in" pages. When the user is logged in, it shows, at the far-right, the name of the logged-in user (meaning that the user is logged in), which shows a dropdown menu with a link for the user to log out. When the logged-in user is the superuser, the dropdown menu includes a link to the admin area (visible to the superuser only) to provide direct access to the admin area from the frontend without the need for the superuser to type the /admin URL. When the user is logged in, it also shows, next to the logged-in user's name, an icon for the user's cart with the total of items in it.
 
-o 
+o It's a sticky navigation bar, so it follows the user's viewport as he/she scrolls up and down each page of the website, allowing the user to easily navigate through the content across all devices without having to go back to the top of the page to access other sections of the site.
 
-**When the user is logged out:**
+o It also contains the website's name and slogan (which bring the user to the Store/home page when clicked on), making it easy for the user to immediately know what the site is about.
 
-**When the user is logged in:**
+![Navbar - user logged out](docs/navbar-user-logged-out.png)
+
+![Navbar - user logged in - Part 1](docs/navbar-user-logged-in-1.png)
+
+![Navbar - user logged in - Part 2](docs/navbar-user-logged-in-2.png)
+
+![Navbar - superuser logged in](docs/navbar-superuser-logged-in.png)
+
+• Sign up page
+
+o A page that can be accessed by users who are logged out and/or haven't signed up yet (they need to sign up in order to be able to log in, shop around and use all the website's features as logged-in users).
+
+o Once the user signs up (there's a back button in case he/she has second thoughts), he/she sees a confirmation message and will be redirected to the Store/home page. There's also a link on this page for the "Log in" page in case the user has already signed up.
+
+o This is an example of the "Create" part of the CRUD (Create / Read / Update / Delete) functionality on this project.
+
+![Sign up 1](docs/sign-up-page-1.png)
+
+![Sign up 2](docs/sign-up-page-2.png)
+
+• Log in page
+
+o This is the page where the user can log in and have access to all the website's functionality and shop around freely - once the user logs in, his/her name wil show up at the far-right of the navbar.
+
+o Once the user logs in (there's a back button in case he/she has second thoughts), he/she sees a confirmation message and will be redirected to the Store/home page. There's also a link on this page for the "Sign up" page in case the user hasn't signed up yet.
+
+![Log in](docs/log-in-page.png)
+
+• Footer
+
+o Built using Bootstrap, it’s shown on every page of the website, and it includes a "© 2022 Copyright: Inline-6 Overnight" notice, as well as a link to the site's Privacy Policy (with an underline effect when hovered over), a Facebook icon (with a highlight effect when hovered over) that takes the user to the official Inline-6 Overnight Facebook page, the contact phone number for the company's Customer Service Department and a form for users to subscribe to Inline-6 Overnight's newsletter (this functionality is provided by Mailchimp).
+
+o Any external links will open in a new tab to allow easy navigation for the user and avoiding the user to leave the website.
+
+![Footer](docs/footer.png)
+
+• Store (home) page
+
+o The Store page is, indeed, the home page of the website, and it works as the landing page, being the first thing the user sees on this site. It has a beautiful image of an inline-6 engine at the top, to make the user aware it's a car engine-related website.
+
+![Store/home main image](static/images/home-image.png)
+
+o By scrolling down, the user will see the website's title and introductory text, explaining what Inline-6 Overnight is about and introducing the next section - the website's products.
+
+![Store/home introductory text](docs/store-home-introductory-text.png)
+
+o When the user is logged out, he/she will still be able to view all details of the six products being sold (on this page itself, but there's also a "View" button that allows any user to access the product page for every specific product), but won't be able to add any products to the cart (the button is only visible/accessible when the user is logged in).
+
+![Products section - user logged out - Part 1](docs/products-section-user-logged-out-1.png)
+
+![Products section - user logged out - Part 2](docs/products-section-user-logged-out-2.png)
+
+o Scrolling down, the user will find a text about the inline-6 engine, considered by the creator of this website as essential information for any car engine enthusiast (and it's proof that the Inline-6 Overnight crowd knows about this stuff) and a great source of good SEO (Search Engine Optimization), as it's content-rich and uses many of the technical keywords indicated on the SEO section of this README. Also, any external links will open in a new tab to allow easy navigation for the user and avoiding the user to leave the website.
+
+![A Word On the Inline-6 Engine](docs/a-word-on-the-inline-6-engine.png)
+
+• Product detail page(s)
+
+o By clicking on the "View" button for every product (again, this button is available for any user, logged-in or not), the user can access all the information about any specific product, including the description, which is not available on the main page. There's a back button which brings the user back to the main page.
+
+o This is an example of the "Read" part of the CRUD (Create / Read / Update / Delete) functionality on this project.
+
+![Product detail page 1](docs/product-detail-page-1.png)
+
+![Product detail page 2](docs/product-detail-page-2.png)
+
+• "Add" button (to add a product to the cart)
+
+o When a user is logged in, he/she will be able to add any products to the cart (the button is only visible/accessible when the user is logged in). The total of items in the cart will be updated, and the user can see this information on the cart icon at the far-right of the navbar (the user will also see a success message confirming that the cart has been updated).
+
+o This is an example of the "Update" part of the CRUD (Create / Read / Update / Delete) functionality on this project - the cart total (which will still be there waiting for the user if he/she logs out without checking out and comes back to the website later), and the user's future order (which is still an "empty" and incomplete order with no transaction ID number in the admin area), will be updated when the user clicks the "Add button" for any product.
+
+![Add to Cart button](docs/add-to-cart-button.png)
+
+![Cart updated 1](docs/cart-updated-1.png)
+
+![Cart updated 2](docs/cart-updated-2.png)
+
+![Cart updated 3](docs/cart-updated-3.png)
 
 ## Features Left to Implement
 
@@ -430,7 +508,7 @@ The two warnings on this file are not syntax errors and do not impact any functi
 
 • Code Institute's Python Linter (results)
 
-Only .py pages that were created/changed by the creator of this project were validated using PEP8.
+Only .py pages that were created/changed by the creator of this project were validated using CI's Python Linter.
 
 [settings.py](docs/python-validator-results-settings-py.png)
 
@@ -510,7 +588,7 @@ Countless bugs were found and fixed during the creation of this e-Commerce websi
 
 #### Unfixed Bugs
 
-• Whenever a user pays for his/her products, he/she gets redirected to the main page and is informed that the payment was completed and that his/her order will be delivered the next working day. Immediately, an order is created in the database, and the superuser can see it in the admin area. This order will be set as "complete" and there'll be a transaction id number. There'll also be a new shipping address (if the user bought any physical products), and each item on the order will be shown separately on the order items tab. All good so far but, for some bizarre reason that the creator of this website can't even begin to explain, there's always an empty order (only one) on the orders tab in the admin area for every user/customer who bought something on the website. This order is always set as "not complete" and doesn't have a transaction id number. Even if the user/customer orders 20 times on the website, there's always one empty order (again, only one) on the order's list for that user/customer (it'll be viewed in the list of orders on the admin area as the most recent order for that customer), which will become that user/customer's next order the next time he/she orders something on the website. For example, Alice orders something and pays, and order 50 is created in the admin area. Her order 50 is set to "complete" and has a transaction id number, so it'll be shipped and everything is correct. But order 51 was also automatically created for Alice, set to "not complete" and with no transaction id number. It'll stay there as order 51 until Alice comes back to the website (a few weeks later, for example, and after many other customers ordered many times on the website) and orders again. Alice's order is created as normal, set to "complete" and with a transaction id number - this new order will be that empty order 51 that was automatically created for Alice and was hanging empty on the list of orders (the superuser will be able to know exactly which is Alice's order on the order list by checking the "Order items" tab in the admin area - the OrderItem object will tell which order it relates to). It's now completed and it'll be shipped - and a new empty order (set to "not complete" and with no transaction id number) has, again, been automatically created for Alice - order 87, for example (again, it'll be viewed in the list of orders in the admin area as the most recent order for that customer) - and will stay there until Alice buys something on the website again (it'll be used for her next order). This doesn't affect the normal order functionality of the website at all (this was even ran by tutors in Code Institute and it wasn't considered a big thing, it's just something the website does), but it's a silly bug that the creator of this website just couldn't get rid of - probably an issue with a query, but it couldn't be found - and a lot of time was spent trying to do so (in future iterations, the focus will certainly be on fixing this bug). Hopefully, the Assessment Team will see it the same way and no harm will come of this.
+• Whenever a user pays for his/her products, he/she gets redirected to the main page and is informed that the payment was completed and that his/her order will be delivered the next working day. Immediately, an order is created in the database, and the superuser can see it in the admin area. This order will be set as "complete" and there'll be a transaction id number. There'll also be a new shipping address (if the user bought any physical products), and each item on the order will be shown separately on the order items tab. All good so far but, for some bizarre reason that the creator of this website can't even begin to explain, there's always an empty order (only one) on the orders tab in the admin area for every user/customer who bought something on the website. This order is always set as "not complete" and doesn't have a transaction id number. Even if the user/customer orders 20 times on the website, there's always one empty order (again, only one) on the order's list for that user/customer (it'll be viewed in the list of orders on the admin area as the most recent order for that customer), which will become that user/customer's next order the next time he/she orders something on the website. For example, Alice orders something and pays, and order 50 is created in the admin area. Her order 50 is set to "complete" and has a transaction id number, so it'll be shipped and everything is correct. But order 51 was also automatically created for Alice, set to "not complete" and with no transaction id number. It'll stay there as order 51 until Alice comes back to the website (a few weeks later, for example, and after many other customers ordered many times on the website) and orders again. Alice's order is created as normal, set to "complete" and with a transaction id number - this new order will be that empty order 51 that was automatically created for Alice and was hanging empty on the list of orders (the superuser will be able to know exactly which is Alice's order on the order list by checking the "Order items" tab in the admin area - the OrderItem object will tell which order it relates to). It's now completed and it'll be shipped - and a new empty order (set to "not complete" and with no transaction id number) has, again, been automatically created for Alice - order 87, for example (again, it'll be viewed in the list of orders in the admin area as the most recent order for that customer) - and will stay there until Alice buys something on the website again (it'll be used for her next order - and, if Alice comes back to the website, adds products to her cart and doesn't check out, leaving those products hanging on her cart after she logs out, those products will still be on her cart the next time she logs in, and that "empty" order 87 will reflect that and indicate what products are on her cart at any given time, which can be seen by the superuser in the admin area and, in a way, turns this bug into a useful feature). This doesn't affect the normal order functionality of the website (this was even ran by tutors in Code Institute and it wasn't considered a big thing, it's just something the website does), but it's a silly bug that the creator of this website just couldn't get rid of - probably an issue with a query, but it couldn't be found - and a lot of time was spent trying to do so (in future iterations, the focus will certainly be on fixing this bug). Hopefully, the Assessment Team will see it the same way and no harm will come of this.
 
 • Whenever the user makes a mistake logging in - for example, opens any link of the website on a separate tab, logs out on that separate tab and comes back to the first page it opened (where he/she's technically still logged in) and tries to access any page there (or the other way around), he/she won't be able to and a login error page will be shown to the user ("Please log in to shop with Inline-6 Overnight"). But, if the checkout page, specifically, is left opened on a separate tab and the user logs out on a previous page that was also open, he/she will also be shown the "Please log in to shop with Inline-6 Overnight" message if they try and click any button (for example, the "Back to Cart" button) - except the "Continue" and, right afterwards, any PayPal button: in this case, the user can add a physical address, click "Continue" and use the PayPal buttons to pay for the order, and the payment will go through; the user will then be redirected to the main page as usual after a payment, but the cart won't be cleared back to "0" as it normally happens after a successful payment because the order won't be shipped (it'll only be an empty order, not set to "complete", that can be viewed on the admin area by the superuser). Again, this only happens when the user has logged out on a separate page and left the checkout page open. This is due to the PayPal JavaScript code being triggered once the address form is completed and the "Continue" button is clicked, and the creator of this website has tried to prevent the PayPal JS code from being triggered in this kind of situation, but with no success - a lot of time and research was spent on this, and no acceptable solution was found. This issue was ran by tutors in Code Institute and it wasn't considered a big thing. But, in a future iteration, with more time, this bug must certainly be addressed and fixed. Hopefully, the Assessment Team won't penalize this project a lot for this bug.
 
