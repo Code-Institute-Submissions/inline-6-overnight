@@ -362,7 +362,7 @@ o Scrolling down, the user will find a text about the inline-6 engine, considere
 
 • Product detail page(s)
 
-o By clicking on the "View" button for every product (again, this button is available for any user, logged-in or not), the user can access all the information about any specific product, including the description, which is not available on the main page. There's a back button which brings the user back to the main page.
+o By clicking on the "View" button for every product (again, this button is available for any user, logged-in or not), the user can access all the information about any specific product, including the description, which is not available on the main page. There's a back button which brings the user back to the main page. There are five engines, which are physical products and will have to be physically shipped, and one digital product (the remapping software), which does not need to be physically shipped (unlike the other products, it'll just be emailed to the customer with no need for the user to enter any shipping information at checkout stage).
 
 o This is an example of the "Read" part of the CRUD (Create / Read / Update / Delete) functionality on this project.
 
@@ -383,6 +383,126 @@ o This is an example of the "Update" part of the CRUD (Create / Read / Update / 
 ![Cart updated 2](docs/cart-updated-2.png)
 
 ![Cart updated 3](docs/cart-updated-3.png)
+
+• Cart page
+
+o The cart page is only accessible if the user is logged it - here, the user can see how many items he has on the cart, what items those are, the price of each item and the total price of all products on the cart, as well as the "Continue Shopping" button (to go back to the Store page and add more products to the cart) and the "Checkout" button (to proceed to the checkout page when the user is ready to checkout and pay for his/her order).
+
+![Cart page](docs/cart-page.png)
+
+o The cart page also allows the user to update his/her cart by using the arrow buttons in the "Quantity" field of each product - the upper arrow increases the quantity and the lower arrow decreases the quantity. A message informs the user every time the cart is updated. This is another example of the "Update" part of the CRUD (Create / Read / Update / Delete) functionality on this project (as previously explained, both the cart and the user's future order, which is still an "empty" and incomplete order with no transaction ID number in the admin area, will be updated when the user clicks any of the arrow buttons for any product on the cart).
+
+![Cart page updated 1](docs/cart-updated-4.png)
+
+![Cart page updated 2](docs/cart-updated-5.png)
+
+o When the user uses the lower arrow button to decrease the quantity of any product on the cart and goes below "1" for "Quantity", the product is deleted from the cart (the cart icon on the navbar will reflect that, and a message informing the user will be shown) and from the the user's "future" order in the admin area (the "empty" and incomplete order with no transaction ID number in the backend, which will be updated accordingly). This is an example of the "Delete" part of the CRUD (Create / Read / Update / Delete) functionality on this project (on the first screenshot below, we can see that the cart icon on the navbar now shows "0" products and, on the second screenshot below, we can see that Orderitem object 58 disappeared from the "Order items" list in the admin area).
+
+![Cart page updated 3 - product deleted 1](docs/cart-updated-6.png)
+
+![Cart page updated 4 - product deleted 2](docs/cart-updated-7.png)
+
+• Checkout page
+
+o By clicking on the "Checkout" button on the cart page, the user is taken to the checkout page - this is the order's last step, where the user can look at the order summary and see if everything is correct, add the shipping information, click the "Continue" button to show the PayPal payment options (paying by using the user's PayPal account if he/she has one or paying directly by debit/credit card for those users who don't have a PayPal account or prefer to use this payment method). Only the shipping address details are required to be inputted by the user, as Inline-6 Overnight already has the name and email address of the user checking out.
+
+![Checkout page 1](docs/checkout-page-1.png)
+
+![Checkout page 2](docs/checkout-page-2.png)
+
+o As previously mentioned, there's one digital product that, unlike the other five products sold on this website, doesn't need to be physically shipped - the remapping software (remapping, sometimes called ECU tuning, is when the settings of a car's engine control unit, or ECU, is altered to improve several areas of the vehicle's performance, re-programming the car to manage the fuel injection, the airflow, the sensors, etc.). When it's part of an order that also includes physical products, shipping information is required from the user as normal and as previously described. But, if there's only a digital product on the order, the shipping form on the checkout page will not appear, and the PayPal payment options will be visible straight away for the user to go straight to payment (as Inline-6 Overnight already has the name and email address of the logged-in user, so no more information is needed).
+
+![Only digital products at checkout](docs/only-digital-products-at-checkout.png)
+
+• PayPal payment options
+
+o PayPal is the online payment processing system chosen for this e-Commerce website. It's simple to integrate and easy to test and use. It offers two payment options to the user - paying using the user's PayPal account, which millions of people around the world have, making PayPal one of the main payment options in the world, and paying directly by debit/credit card. Only dummy/fake payments (using a dummy/fake PayPal account created on PayPal's Sandbox/testing environment for developers by the creator of this website - or dummy/fake debit/credit card numbers provided by PayPal itself, which can be found [here](https://developer.paypal.com/tools/sandbox/card-testing/)) are accepted (the PayPal account linked to this project is a fake/Sandbox account, so it only takes fake payments - no live/real payments will go through as, for that to happen, a live sandbox account would have to be created and linked to this project using a new Client ID key, which is not the purpose of Inline-6 Overnight as it was created merely as a school project).
+
+• Customer paying using the PayPal account option
+
+o Basically, in order to test this payment system for fake payments only, both a "personal" account and a "business" account were created in the Sandbox environment - the "personal" one representing the customer buying Inline-6 Overnight's products, which is only used to test payments made using the PayPal account option (so the developer can see the money going out of the fake user's account) and the "business" one representing Inline-6 Overnight (the account of the business receiving the payments from all users, wether they paid using their PayPal account or directly by debit/credit card).
+
+o The details to the Sandbox account linked to this project could be provided to the Assessment Team by the creator of this project so the the Assessors could make/test payments using the PayPal account option but, unfortunately, there's 2-factor authentication every time the creator of this website logs in to his Sandbox account, so the Assessment Team would need the code that is sent to his phone when they need to use the account, which can't be, so they won't be able to test any payments using the PayPal account option unless they have a PayPal Sandbox account themselves, which may be unlikely (and which is why a debit/credit card option that allows fake debit/credit card numbers to be used was installed on this project). But, just for the record, the PayPal account option works, as we can see on the screenshots below (we can see the money going out of the customer's "personal" account and landing on Inline-6 Overnight's "business" account).
+
+![Customer paying using the PayPal account option 1](docs/only-digital-products-at-checkout.png)
+
+![Customer paying using the PayPal account option 2](docs/customer-paying-using-the-paypal-account-option-2.png)
+
+![Customer paying using the PayPal account option 3](docs/customer-paying-using-the-paypal-account-option-3.png)
+
+![Customer paying using the PayPal account option 4](docs/customer-paying-using-the-paypal-account-option-4.png)
+
+![Customer paying the PayPal account option 5](docs/customer-paying-using-the-paypal-account-option-5.png)
+
+![Customer paying using the PayPal account option 6](docs/customer-paying-using-the-paypal-account-option-6.png)
+
+![Customer paying using the PayPal account option 7](docs/customer-paying-using-the-paypal-account-option-7.png)
+
+![Customer paying using the PayPal account option 8](docs/customer-paying-using-the-paypal-account-option-8.png)
+
+• Customer paying using the debit/credit option
+
+o This is the payment option that the Assessment Team will be able to use to test payments for this project - by using dummy/fake debit/credit card numbers provided by PayPal itself, which, as mentioned before, can be found [here](https://developer.paypal.com/tools/sandbox/card-testing/)). The Assessors won't be able to see the payment going into Inline-6 Overnight's Sandbox "business" account (due to the 2-factor authentication issue previously described), but they'll be able to test payments, see both success messages being displayed (the JavaScript alert when the payment is successful and the Bootstrap success message when the user is redirected to the main page after a successful payment) and see the order set to "complete" in the admin area. This functionality has been thoroughly tested and it works (just a couple of tips: use any date in the future for the card expiry date, use any four-digit CVV number for American Express cards and any three-digit CVV number for all other cards; sometimes, the American Express test card numbers don't work - all others should be fine, if one doesn't work, try another one, there are 14 fake card numbers on the list). As we can see on the screenshots below, this functionality is working perfectly (in the second-last screenshot, we can see HTTP 200 OK success status response codes left and right - if a card number is incorrect, PayPal's form will immediately alert the user and highlight the incorrect field in red, as we can see on the last screenshot). This is an example of the "Create" part of the CRUD (Create / Read / Update / Delete) functionality on this project (it creates a complete order with a transaction ID number, new order items that will now be shipped and a new shipping address).
+
+![Customer paying using the debit/credit card option 1](docs/paypal-test-cards-1.png)
+
+![Customer paying using the debit/credit card option 2](docs/paypal-test-cards-2.png)
+
+![Customer paying using the debit/credit card option 3](docs/checkout-page-2.png)
+
+![Customer paying using the debit/credit card option 4](docs/customer-paying-using-the-debit-credit-card-option-4.png)
+
+![Customer paying using the debit/credit card option 5](docs/customer-paying-using-the-debit-credit-card-option-5.png)
+
+![Customer paying using the debit/credit card option 6](docs/customer-paying-using-the-debit-credit-card-option-6.png)
+
+![Customer paying using the debit/credit card option 7](docs/customer-paying-using-the-debit-credit-card-option-7.png)
+
+![Customer paying using the debit/credit card option 8](docs/customer-paying-using-the-debit-credit-card-option-8.png)
+
+![Customer paying using the debit/credit card option 9](docs/customer-paying-using-the-debit-credit-card-option-9.png)
+
+![Customer paying using the debit/credit card option 10](docs/customer-paying-using-the-debit-credit-card-option-10.png)
+
+![Customer paying using the debit/credit card option 11](docs/customer-paying-using-the-debit-credit-card-option-11.png)
+
+![Customer paying using the debit/credit card option 12](docs/customer-paying-using-the-debit-credit-card-option-12.png)
+
+![Customer paying using the debit/credit card option 13](docs/customer-paying-using-the-debit-credit-card-option-13.png)
+
+![Customer paying using the debit/credit card option 14](docs/customer-paying-using-the-debit-credit-card-option-14.png)
+
+• Alert messages
+
+o There's an alert message for every user action in Inline-6 Overnight - please see screenshots below.
+
+![Alert message - signup](docs/alert-message-signup.png)
+
+![Alert message - login](docs/alert-message-login.png)
+
+![Alert message - logout](docs/alert-message-logout.png)
+
+![Alert message - update cart](docs/alert-message-update-cart.png)
+
+![Alert message - delete product from cart](docs/alert-message-delete-product-from-cart.png)
+
+![Alert message - making payment - JavaScript](docs/customer-paying-using-the-debit-credit-card-option-8.png)
+
+![Alert message - making payment - Bootstrap](docs/customer-paying-using-the-debit-credit-card-option-9.png)
+
+• Login error pages
+
+o Whenever the user makes a mistake logging in - for example, opens any link of the website on a separate tab, logs out on that separate tab and comes back to the first page it opened (where he/she's technically still logged in) and tries to access any page there (or the other way around), he/she won't be able to and a login error page will be shown to the user ("Please log in to shop with Inline-6 Overnight").
+
+![Login error 1](docs/log-in-error-page-cart.png)
+
+![Login error 2](docs/log-in-error-page-checkout.png)
+
+• 404 page
+
+o A 404 page is displayed when the user tries to access a URL that doesn't exist on the website. There's a back button which brings the user back to the main page.
+
+![404 page](docs/404-page.png)
 
 ## Features Left to Implement
 
