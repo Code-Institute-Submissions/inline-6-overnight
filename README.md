@@ -504,6 +504,16 @@ o A 404 page is displayed when the user tries to access a URL that doesn't exist
 
 ![404 page](docs/404-page.png)
 
+• Admin area
+
+o In the admin area (to which only the superuser/website administrator has access), the administrator can control the content of the site as well what its users do on it.
+
+o The admin user has access to more functionality than regular users, which allows him to create, read, update and delete information such as users/customers (with the usernames, the customers' names and their email addresses, all the details that the user needs to provide when first signing up), order items (every order item seen separately, with the product's name, the quantity of the product on a specific order and the order number of the order it belongs to), orders (each order has a number, and it includes the customer name, a transaction ID number and the status of the order set to complete), products (with the product's name, its price, the product's image, the product's description and a field setting the product as a physical product or a digital product - if it's a physical product, the user will be prompted to enter a shipping address, and if it's a digital, product, the shipping form won't even appear at checkout, it goes straight to the PayPal payment options) and shipping addresses (every time a user orders something on the website, a new user address is added to the list of shipping addresses in teh admin area, and it includes the address details, the name of the user who entered the shipping address and the number of the order it relates to).
+
+o As mentioned before, only the superuser/blog administrator can access the admin area, and he can do so by adding "/admin" to the URL of the Home page and signing in or doing it directly from the frontend via the "Admin" button on the dropdown menu of the logged-in user when the superuser logs in on the frontend (this button is only available for the logged-in superuser).
+
+![Admin area](docs/admin-area.png)
+
 ## Features Left to Implement
 
 • Guest checkout functionality, so that users can shop around the website without the need to create an account (something that may not be totally suitable for a website that sells such expensive products - mostly car engines, and mostly to businesses in the automotive industry, meaning that there should be some sort of registration details that can be used to identify/track the users/customers of such e-Commerce platform and their orders). But, as forcing users to create an account can affect sales - as any resistance does - it may be an option for future iterations (though the creator of this blog is not a big fan of this feature on websites like Inline-6 Overnight).
